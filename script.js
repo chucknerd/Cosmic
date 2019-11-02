@@ -13,3 +13,5 @@ function checkInput() {
 function addLine(line) {
     let textNode = document.createTextNode(line);
     document.getElementById("consoletext").appendChild(textNode);
+
+    
