@@ -23,6 +23,7 @@ body {
 #console {
     margin: 100px;
     padding: 100px;
+    position: relative;
 }
 
 #consoletext {
@@ -39,8 +40,10 @@ body {
     background-color: rgb(0, 0, 0);
     color: rgb(20, 255, 71);
     font-family: Monospace;
-    width: calc(100% - 20px);
+    width: 415px;
     overflow: hidden;
+    position: absolute;
+    top: 140px;
 }
 
 ::placeholder{
