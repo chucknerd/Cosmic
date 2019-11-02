@@ -8,10 +8,10 @@
 
 textarea {
     background-color: black;
-    color: rgb(88, 255, 88);
-    border: rgb(88, 255, 88);
+    color: rgb(1, 255, 1);
+    border:  rgb(1, 255, 1);
     border-style: inset;
-    border-block-color: rgb(88, 255, 88);
+    border-block-color: rgb(1, 255, 1);
     position: absolute;
     bottom: 65px;
     text-align: left;
