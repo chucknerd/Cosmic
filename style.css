@@ -1,0 +1,20 @@
+/* text history and story box */
+
+#container {
+    height: 400px;
+    width: 900px;
+    background-color: black;
+}
+
+textarea {
+    background-color: black;
+    color: rgb(88, 255, 88);
+    border: rgb(88, 255, 88);
+    border-style: inset;
+    border-block-color: rgb(88, 255, 88);
+    position: absolute;
+    bottom: 65px;
+    text-align: left;
+    width: 890px;
+}
+
