@@ -45,4 +45,3 @@ function addLine(line) {
 // function placehold(id, placeholder) {
 //     $("#" + id).html(placeholder);
 // }
-    

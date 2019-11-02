@@ -30,6 +30,7 @@ body {
     color:rgb(20, 255, 71);
     font-family: Monospace;
     margin: 10px 0px 0px 10px;
+    
 }
 
 #textinput {
@@ -49,4 +50,3 @@ body {
 ::placeholder{
     color: rgb(7, 121, 32);
 }
-
