@@ -1,5 +1,5 @@
 function checkInput() {
-    var event = window.event || event.which;
+    let event = window.event || event.which;
 
     if (event.keyCode == 13) {
         event.preventDefault();
@@ -11,5 +11,5 @@ function checkInput() {
 }
 
 function addLine(line) {
-    var textNode = document.createTextNode(line);
+    let textNode = document.createTextNode(line);
     document.getElementById("consoletext").appendChild(textNode);
