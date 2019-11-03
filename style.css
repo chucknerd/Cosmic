@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 25px;
-    overflow-y: auto;
+    overflow-y: visible;
     top: 50px;
     }
 
@@ -46,7 +46,7 @@ body {
     background-color: rgb(0, 0, 0);
     color: rgb(20, 255, 71);
     font-family: Monospace;
-    width: 415px;
+    width: 500px;
     overflow: hidden;
     position: absolute;
     top: 140px;
