@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-        <link rel="stylesheet" href="./style.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cosmic</title>
-</head>
+  </head>
 
-<body>
-        <div id = "background">
-            <div id = "console">
-                <div id="editable" contentEditable="true"></div>
-                
-                <div id = "consoletext" type="text" id="user_in" autofocus data-lpignore="true">WELCOME TO COSMIC, A TEXT BASED ADVENTURE SET IN SPACE. COPYRIGHT 2019</div>
-                
-                <textarea
-                    placeholder="Type Your Commands Here..."
-                    rows = "1"
-                    id = "textinput"
-                    onkeydown = "checkInput();"
-                
-                    ></textarea>
-            </div>
+  <body>
+    <div id="background">
+      <div id="console">
+        <div id="consoletext" type="text">
+          <div class="text-starter-div"></div>
+          WELCOME TO COSMIC, A TEXT BASED ADVENTURE SET IN SPACE. COPYRIGHT 2019
         </div>
-</body>
-<script src="./script.js"></script>
+        <textarea
+          placeholder="Type Your Commands Here..."
+          rows="1"
+          id="textinput"
+          onkeydown="checkInput();"
+          autofocus
+        ></textarea>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
