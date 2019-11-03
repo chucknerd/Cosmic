@@ -23,7 +23,7 @@ body {
 #console {
     margin: 100px;
     padding: 100px;
-    position: relative;
+    position: fixed;
 }
 
 #consoletext {
@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 25px;
-    overflow-y: visible;
+    overflow: visible;
     top: 50px;
     }
 
