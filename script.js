@@ -37,7 +37,7 @@ function playGame() {
     
     if(txt == start) {
         // we get out of bed
-        var getUp = prompt("You get out of bed");
+        var getUp = alert("You get out of bed");
     }
 }
 
