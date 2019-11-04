@@ -4,7 +4,7 @@ const inputElement = document.getElementById("textinput");
 const consoleText = document.getElementById("consoletext");
 
 function checkInput() {
-  const event = window.event || event.which;
+  
 
   if (event.keyCode == 13) {
     event.preventDefault();
@@ -32,7 +32,7 @@ document.getElemendById("help") = "";
 
 //play game
 
-
+if(event.target.value.toLowerCase() === "start");
 
 
 
