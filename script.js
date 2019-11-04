@@ -25,6 +25,7 @@ function addLine(line) {
 
     document.getElemendById("startscreen") = "";
 
+
 //help
 document.getElemendById("help") = "";
 
