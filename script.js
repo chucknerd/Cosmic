@@ -25,5 +25,10 @@ function addLine(line) {
 
     document.getElemendById("startscreen") = "";
 
+// play game
+
+document.getElemendById("help") = "";
+
+
 
 
