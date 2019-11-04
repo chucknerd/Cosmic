@@ -23,4 +23,7 @@ function addLine(line) {
 
 //start screen
 
+    document.getElemendById("startscreen") = "";
+
+
 
