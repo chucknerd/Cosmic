@@ -31,14 +31,12 @@ function addLine(line) {
 document.getElemendById("help") = "";
 
 //play game
-function playGame() {
-if(event.target.value.toLowerCase() === "start");
 
-var startGame = prompt("You wake up from a restful nights sleep in your quarters");
+if(event.target.value.toLowerCase() === "start") {
+    addLine("New line message");
+ }
 
-}
 
-playGame();
 
 
 
