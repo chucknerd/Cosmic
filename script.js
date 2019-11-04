@@ -10,8 +10,8 @@ function checkInput() {
       } else {
       event.preventDefault();
       addLine(inputElement.value);
-      inputElement.value = "";
       }
+      inputElement.value = "";
     }
   }
 
