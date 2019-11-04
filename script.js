@@ -4,14 +4,16 @@ const inputElement = document.getElementById("textinput");
 const consoleText = document.getElementById("consoletext");
 
 function checkInput() {
-  
-
-  if (event.keyCode == 13) {
-    event.preventDefault();
-    addLine(inputElement.value);
-    inputElement.value = "";
+    if (event.keyCode == 13) {
+      if(event.target.value.toLowerCase() === "start") {
+        addLine("New line message");
+      } else {
+      event.preventDefault();
+      addLine(inputElement.value);
+      inputElement.value = "";
+      }
+    }
   }
-}
 
 function addLine(line) {
   const newLine = document.createElement("DIV");
@@ -23,17 +25,15 @@ function addLine(line) {
 
 //start screen
 
-    document.getElemendById("startscreen") = "";
+    document.getElementById("startscreen") = "";
 
 
 //help
-document.getElemendById("help") = "";
+document.getElementById("help") = "";
 
 //play game
 
-if(event.target.value.toLowerCase() === "start") {
-    addLine("New line message");
- }
+
 
 
 
