@@ -33,11 +33,14 @@ document.getElemendById("help") = "";
 //play game
 
 function playGame() {
-    var start = prompt("You've just woken up and you're lying in bed. Do you want to get up? If So, type 'start'");
+    var txt = "start";
     
-    if(start == true) {
+    if(txt == start) {
         // we get out of bed
-        var outOfBed = prompt("You get out of your bed.");
+        var getUp = prompt("You get out of bed");
+        
+        playGame();
+
     }
 }
 
