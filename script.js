@@ -27,7 +27,21 @@ function addLine(line) {
 
 // play game
 
+//help
 document.getElemendById("help") = "";
+
+//play game
+
+function playGame() {
+    var start = prompt("You've just woken up and you're lying in bed. Do you want to get up? If So, type 'start'");
+    
+    if(start == true) {
+        // we get out of bed
+        var outOfBed = prompt("You get out of your bed.");
+    }
+}
+
+playGame();
 
 
 
