@@ -32,16 +32,7 @@ document.getElemendById("help") = "";
 
 //play game
 
-function playGame() {
-    var txt = "start";
-    
-    if(txt == start) {
-        // we get out of bed
-        var getUp = alert("You get out of bed");
-    }
-}
 
-playGame();
 
 
 
