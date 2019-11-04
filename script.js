@@ -1,3 +1,5 @@
+//console functionality
+
 const inputElement = document.getElementById("textinput");
 const consoleText = document.getElementById("consoletext");
 
@@ -18,3 +20,7 @@ function addLine(line) {
 
   consoleText.scrollTop = consoleText.scrollHeight;
 }
+
+//start screen
+
+
