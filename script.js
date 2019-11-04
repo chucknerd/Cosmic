@@ -29,7 +29,7 @@ function addLine(line) {
 
 
 //help
-document.getElementById("help") = "";
+    document.getElementById("help") = "";
 
 //play game
 
