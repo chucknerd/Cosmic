@@ -1,6 +1,6 @@
 //console functionality
 
-const inputElement = document.getElementById("textinput");
+const textInput = document.getElementById("textinput");
 const consoleText = document.getElementById("consoletext");
 
 function addLine(line) {
@@ -21,6 +21,29 @@ function addLine(line) {
 
 //play game
 
+
+// typing start and instrcutions
+
+
+const consoleTextObj = {
+  look:
+  "You look around",
+}
+
+function enterCommand(text) {
+  if (text === "look") {
+    consoleText.innerHTML = "";
+    return;
+    alert("You look around.")
+  }
+
+  if (consoleTextObj[text]) {
+    consoletext.innerHTML += "<div>" + consoleTextObj[text] + "</div>";
+  } else {
+    alert("Invalid command");
+  }
+}
+
 function checkInput() {
     if (event.keyCode == 13) {
       if(event.target.value.toLowerCase() === "start") {
@@ -32,11 +55,10 @@ function checkInput() {
       }
       inputElement.value = "";
     }
-  }
+    
+  };
 
-  
 
-  
 
 
 
