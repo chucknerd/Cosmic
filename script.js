@@ -39,17 +39,24 @@ function checkInput() {
 const consoleTextObj = {
   look:
   "You look around",
-}
+};
 
 function enterCommand(text) {
   if (text === "look") {
-    consoleText.innerHTML = "";
+    consoleText.innerHTML = "consoletext";
     return;
     alert("You look around.")
   }
 
  
 };
+
+window.addEventListener("keypress", function(e) {
+  if (e.keyCode === 13) {
+    enterCommand(commandInput.value.toLowerCase().trim());
+    commandInput.value = "";
+  }
+});
 
 
 
