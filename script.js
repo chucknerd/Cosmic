@@ -48,12 +48,8 @@ function enterCommand(text) {
     alert("You look around.")
   }
 
-  if (consoleTextObj[text]) {
-    consoletext.innerHTML += "<div>" + consoleTextObj[text] + "</div>";
-  } else {
-    alert("Invalid command");
-  }
-}
+ 
+};
 
 
 
