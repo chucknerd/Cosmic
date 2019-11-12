@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Cosmic</title>
-  </head>
-
-  <body>
-    <div id="background">
-        <div id="console">
-
-            <div id="consoletext" type="text">
-                <div class="text-starter-div"></div>
-                
-                    <script type="text/javascript" src=""></script>
-                    <p id="startscreen">Welcome to Cosmic! A text based adventure game set in space. Copyright 2019. Authors: Chuck and Rob</p>
-                    <p id="help">Instructions: Type in your commands below. View your progress and history above. Type the word 'start' to begin. GOOD LUCK!</p>
-                </div>
-           <textarea
-                placeholder="Type Your Commands Here..."
-                rows="1"
-                id="textinput"
-                onkeydown="checkInput();"
-                autofocus
-                ></textarea>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"
+    <title>Cosmmic</title>
+</head>
+<body>
+    <div class="container">
+        <div id="text">Text</div>
+        <div id="option-buttons" class="btn-grid"></div>
+            <button class="btn">Option 1</button>
+            <button class="btn">Option 2</button>
+            <button class="btn">Option 3</button>
+            <button class="btn">Option 4</button>
     </div>
-    <script src="./script.js"></script>
-  </body>
-
+    
+</body>
 </html>
