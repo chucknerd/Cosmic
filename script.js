@@ -50,19 +50,95 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'You wake up in a strange place and you see a jar of blue goo near you.',
+    text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. Select options to advance in your adventure. Thanks for playing! **Created and owned by Little Guyz Entertainment. Copyright 2019",
     options: [
       {
-        text: 'Take goo.',
-        setState: { blueGoo: true },
-        nextText: 2
+        text: 'START',
+        nextText: 3
       },
       {
-        text: 'Leave the goo.',
+        text: 'No, Thanks.',
         nextText: 2
-      }
+      },
     ]
   },
+  {
+    id: 2,
+    text: "You choose not to play Cosmic and never experience it's glory.",
+    options: [
+      {
+        text: 'Restart if you regret your decision',
+        nextText: -1
+        },
+    ]
+  },
+  {
+    id: 3,
+    text: 'You wake up in your room to the sound of an incoming message.',
+    options: [
+      {
+        text: 'Check your message.',
+        nextText: 5
+      },
+      {
+        text: 'Go back to sleep.',
+        nextText: 4
+      },
+    ]
+  },
+  {
+    id: 4,
+    text: 'You fall back to sleep, dreaming of traveling the galaxy only to wake up the next day and live a normal life.',
+    options: [
+      {
+      text: 'Restart',
+      nextText: -1
+      },
+    ]
+  },
+  {
+    id: 5,
+    text: 'INCOMING MESSAGE FROM THE TSCA -- CONTRACT: 8000 CREDITS, MANORA PRIME, ACCEPT FOR MISSION DETAILS',
+    options: [
+      {
+        text: 'ACCEPT',
+        setState: { message: true },
+        nextText: 7
+      },
+      {
+        text: 'IGNORE', // check message stays an option, but can't access 
+        setState: { message: true },
+        nextText: 6
+      },
+    ]
+  },
+  {
+    id:6,
+    text: 'You ignore the message. What do you want to do?',
+    options: [
+      {
+        text: 'Look around',
+      nextText: 8
+      },
+      {
+        text: 'Eat some food',
+      nextText: 9
+      },
+      {
+        text: 'Get Dressed',
+        setState: { adventureClothes: true },
+      nextText: 10
+      },
+      {
+        text: '(1) UNDREAD MESSAGE',
+      nextText: 7
+      },
+    ]
+  },
+
+
+// examples 
+ /* },
   {
     id: 2,
     text: "You venture forth in search of answers to where you are, when you come across a merchant.",
@@ -112,7 +188,7 @@ const textNodes = [
       nextText: -1
       }
     ]
-  },
+  },*/
 ]
 
 //calls startGame as soon as page loads
