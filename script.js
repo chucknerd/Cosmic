@@ -38,7 +38,11 @@ function showOption(option) {
 //selects our options
 function selectOption(option) {
   const nextTextNodeId = option.nextText
+  if (nextTextNodeId <= 0) {
+    return startGame()
+  }
   state = Object.assign(state, option.setState)
+  showTextNode(nextTextNodeId)
 }
 
 //defined textNodes or options the player chooses and what happens next
@@ -62,7 +66,7 @@ const textNodes = [
   {
     id: 2,
     text: "You venture forth in search of answers to where you are, when you come across a merchant.",
-    options [
+    options: [
       {
         text: 'Trade the goo for a sword',
         requiredState: (currentState) => currentState.blueGoo,
@@ -78,9 +82,37 @@ const textNodes = [
       {
         text: 'Ignore the merchant.',
         nextText: 3
+      },
+    ]
+  },
+  {
+    id: 3,
+    text: 'After leaving the merchant, you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
+    options: [
+      { 
+        text: 'Explore castle',
+        nextText: 4
+      },
+      { 
+        text: 'Find a room to sleep in the town',
+        nextText: 5
+      },
+      { 
+        text: 'Find some hay in a stable to sleep in',
+        nextText: 6
+      },
+    ]
+  },
+  {
+    id: 4,
+    text: 'You are so tired that you fall asleep while exploring the castle and are killed by some terrible monster in your sleep.',
+    options: [
+      {
+      text: 'Restart',
+      nextText: -1
       }
     ]
-  }
+  },
 ]
 
 //calls startGame as soon as page loads
