@@ -6,7 +6,7 @@ const optionButtonsElement = document.getElementById('option-buttons')
 let state = {}
 
 //starts game, empty object, and shows next text node
-fucntions startGame() {
+function startGame() {
   state = {}
   showTextNode(1)
 }
@@ -15,7 +15,7 @@ fucntions startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
-  while optionButtonsElement.firstChild) {
+  while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
 
@@ -30,14 +30,15 @@ function showTextNode(textNodeIndex) {
   })
 }
 
-
+//shows options
 function showOption(option) {
-  return true
+  return option.requiredState == null || option.requiredState(state)
 }
 
 //selects our options
 function selectOption(option) {
-
+  const nextTextNodeId = option.nextText
+  state = Object.assign(state, option.setState)
 }
 
 //defined textNodes or options the player chooses and what happens next
@@ -59,7 +60,26 @@ const textNodes = [
     ]
   },
   {
-    id: 2
+    id: 2,
+    text: "You venture forth in search of answers to where you are, when you come across a merchant.",
+    options [
+      {
+        text: 'Trade the goo for a sword',
+        requiredState: (currentState) => currentState.blueGoo,
+        setState: {blueGoo: false, sword: true },
+        nextText: 3
+      },
+      {
+        text: 'Trade the goo for a shield',
+        requiredState: (currentState) => currentState.blueGoo,
+        setState: {blueGoo: false, shield: true },
+        nextText: 3
+      },
+      {
+        text: 'Ignore the merchant.',
+        nextText: 3
+      }
+    ]
   }
 ]
 
