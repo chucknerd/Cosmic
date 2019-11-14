@@ -98,7 +98,7 @@ const textNodes = [
   },
   {
     id: 5,
-    text: 'INCOMING MESSAGE FROM THE TSCA -- CONTRACT: 8000 CREDITS, MANORA PRIME, ACCEPT FOR MISSION DETAILS',
+    text: "INCOMING MESSAGE FROM THE TSCA -- CONTRACT: MANORA PRIME, 'ACCEPT' FOR MISSION DETAILS",
     options: [
       {
         text: 'ACCEPT',
@@ -106,7 +106,7 @@ const textNodes = [
         nextText: 7
       },
       {
-        text: 'IGNORE', // check message stays an option, but can't access 
+        text: 'IGNORE', 
         setState: { message: true },
         nextText: 6
       },
@@ -135,6 +135,15 @@ const textNodes = [
       },
     ]
   },
+  {
+    id: 8
+    text: "You look around your quarters. It's very dark. You can't see.",
+    options: [
+      {
+        
+      }
+    ]
+  }
 
 
 // examples 
