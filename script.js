@@ -136,14 +136,12 @@ const textNodes = [
     ]
   },
   {
-    id: 8
+    id: 8,
     text: "You look around your quarters. It's very dark. You can't see.",
-    options: [
-      {
-        
-      }
+    options: [ 
+      
     ]
-  }
+  },
 
 
 // examples 
