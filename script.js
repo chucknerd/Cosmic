@@ -206,23 +206,39 @@ const textNodes = [
       },
     ]
   },
+
+  //inspecting and equipping gear
+
   {
     id: 16,
     text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue jacket and slacks. You lace up some black boots.",
-    requiredState: (currentState) => currentState.adventureClothes,
     setState: {adventureClothes: false},
     options: [
       {
         text: "Inspect and equip utility belt",
+        setState: {utilityBelt: true},
         nextText: 17
       },
+      {
+        text: "Inspect and equip clothing",
+        requiredState: (currentState) => currentState.adventureClothes,
+          nextText: 16 
+        },
       {
         text: "Leave closet",
         nextText: 19
       },
-    ]
-    
+    ]  
   },
+  {
+    id: 17,
+    text: "You strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship.",
+    setState {utilityBelt: false},
+    options: [
+      text: "Leave closet",
+    ]
+  },
+
 
   // id 21 for closet after player has taken something
   {
