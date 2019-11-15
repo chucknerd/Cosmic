@@ -7,7 +7,9 @@ let state = {}
 
 //starts game, empty object, and shows next text node
 function startGame() {
-  state = {}
+  state = {
+    show14: true,
+  }
   showTextNode(1)
 }
 
@@ -49,8 +51,7 @@ function selectOption(option) {
 
 const textNodes = [
 
-  // starting the game with options to restart
-
+  // game bootup starting the game with options to restart
   {
     id: 1,
     text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. Select options to advance in your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
@@ -65,6 +66,8 @@ const textNodes = [
       },
     ]
   },
+  
+  //player said 'No Thanks'
   {
     id: 2,
     text: "You choose not to play Cosmic and never experience it's glory.",
@@ -76,14 +79,14 @@ const textNodes = [
     ]
   },
 
-  //player has chosen START the game with options to restart
-
+  //player has chosen START the game with options but can go to sleep and not play, restart
   {
     id: 3,
     text: 'You wake up in your room to the sound of an incoming message.',
     options: [
       {
         text: 'Speak command to check messages.',
+        setState: { message: true },
         nextText: 5
       },
       {
@@ -92,6 +95,8 @@ const textNodes = [
       },
     ]
   },
+  
+  // player goes to sleep
   {
     id: 4,
     text: 'You fall back to sleep, dreaming of traveling the galaxy only to wake up the next day and live a normal life.',
@@ -102,193 +107,199 @@ const textNodes = [
       },
     ]
   },
+  
+  // player has chosen to check message 
   {
     id: 5,
     text: "INCOMING MESSAGE FROM THE TSCA -- CONTRACT: MANORA PRIME, 'ACCEPT' FOR MISSION DETAILS",
     options: [
       {
-        text: 'ACCEPT',
-        setState: { message: true },
-        nextText: 7
+        text: 'ACCEPT AND ENCRYPT',
+        setState: {message: false},
+        nextText: 6
       },
       {
         text: 'Ignore for now', 
-        nextText: 6
+        nextText: 8
+      },
+    ]
+  },
+  
+    // player accepts and encrypts
+    {
+    id: 6,
+    text: "Contract Invitation > Contreact Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Credits. By accepting advancement, you are hearby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
+    options: [
+      {
+        text: "AGREE AND ACCEPT TERMS",
+        nextText: 7
+      },
+      {
+        text: "Ignore for now.",
+        nextText: 8
       },
     ]
   },
 
-  //player has ignored messages and is laying in the bed in the dark
-
+  //player agrees and accepts terms
   {
-    id:6,
+    id: 7,
+    text: "You have agreed to take the bounty. A copy of the agreement and deposit slip have been transmitted to your account. Your advancement funds are available immediately. Please report in 24 hours or less or we will be forced to place a warrant out and will litigate for any funds and costs for your extradition. Thank you!",
+    options: [
+      {
+        text: "Look around.",
+        nextText: 9
+      },
+    ]
+  },
+
+  //player ignores messages and is just laying in bed
+  {
+    id: 8,
     text: 'You ignore the message. What do you want to do?',
     options: [
       {
         text: 'Look around',
-      nextText: 8
+      nextText: 9
+      },
+      {
+        text: "Speak command to check messages",
+        setState: {message: true},
+        requiredState: (currentState) => currentState.message,
+        nextText: 5
       },
     ]
   },
+   
+  // player looks around the room
   {
-    id: 8,
+    id: 9,
     text: "You look around your quarters. It's very dark. You can't see. Your personal viewing monitor on your desk, to the left, is blinking with a new message.",
     options: [ 
       {
         text: "Speak command to turn light on",
-        nextText: 11
+         nextText: 10
       },
       {
         text: "Speak command to check messages",
-        nextText: 12
+        setState: {message: true},
+        requiredState: (currentState) => currentState.message,
+        nextText: 5
       },
     ]
   },
 
-  //room state for when the player initialy turns the lights on
+  //player turns lights on
 
   {
-    id: 11,
+    id: 10,
     text: "You say 'lights on' and the flourescent light illuminates. You see your room in all it's bachelor glory. It's nothing special, just what you can afford and a place to rest your head. It's a single room with a bathroom. There is a main viewing monitor in front of you on the wall. A sink to your right. One closet. The bathroom is beside the sink. You have a fridge and freezer combo in the corner. The door to exit is on your left. You have a desk, to your left, that doubles as a dresser. Your personal viewing monitor sits upon your desk, blinking with a new undread message.",
     options: [
       {
         text: "Look in closet",
-        nextText: 13
+        requiredState: currentState => currentState.show14,
+        nextText: 11
       },
       {
         text: "Look in bathroom",
-        nextText: 14
+        nextText: 12
       },
       {
         text: "Check the fridge",
-        nextText: 15
+        nextText: 13
       },
       {
         text: "Speak command to check messages",
-        nextText: 12
+        setState: {message: false},
+        requiredState: (currentState) => currentState.message,
+        nextText: 5
       },
     ]
   },
-  {
-    id: 14,
-    text: "The flourescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
-    option: [
-      {
-        text: "leave bathroom",
-        nextText: 20
-      },
-    ]
-  },
-
-  // id 13 for initially looking in closet, equipping and inspecting gear 
+  
+    // Player looks in closet 
 
   {
-    id: 13,
+    id: 11,
     text: "You open the door and a flourescent light automatically illuminates. You see your clothes hanging on a rack. There are boots on the floor. Your utility belt is on a shelf above the rack. There is an open box of charge plugs next to the belt.",
     options: [
       {
-        text: "Inspect and equip clothing",
-        setState: {adventureClothes: true}, 
-        nextText: 16
-      },
-      {
-        text: "Inspect and equip utility belt",
-        setState: {utilityBelt: true},
-        nextText: 17
-      },
-      {
-        text: "Inspect charge plug box",
-        nextText: 18
-      },
-      {
-        text: "Leave closet",
-        nextText: 19
-      },
-    ]
-  },
-
-  //inspecting and equipping gear
-
-  {
-    id: 16,
-    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue jacket and slacks. You lace up some black boots.",
-    setState: {adventureClothes: false},
-    options: [
-      {
-        text: "Inspect and equip utility belt",
-        setState: {utilityBelt: true},
-        nextText: 17
-      },
-      {
-        text: "Inspect and equip clothing",
-        requiredState: (currentState) => currentState.adventureClothes,
-          nextText: 16 
-        },
-      {
-        text: "Leave closet",
-        nextText: 19
-      },
-    ]  
-  },
-  {
-    id: 17,
-    text: "You strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship.",
-    setState {utilityBelt: false},
-    options: [
-      text: "Leave closet",
-    ]
-  },
-
-
-  // id 21 for closet after player has taken something
-  {
-    id: 21,
-    text: "You're in the closet",
-    options: [ 
-      {
-      text: "Inspect and equip clothing",
-      requiredState: (currentState) => currentState.adventureClothes,
-        nextText: 16 
-      },
-      {
-        text: "Inspect and equip utility belt",
-        requiredState: (currentState) => currentState.utilityBelt,
-        nextText: 17
-      },
-    ]
-  },
-
-  // id 19 for room after player has already turned lights on
-
-  {
-    id: 19,
-    text: "You're in your room",
-    options: [
-      {
-        text: "Look in closet",
-         requiredState: (currentState) => currentState.adventureClothes,
-        requiredState: (currentState) => currentState.utilityBelt,
-        nextText: 13
-      },
-      {
-        text: "Look in bathroom",
+        text: "Inspect and equip clothing and utility belt",
+        requiredState: currentState => currentState.show14,
+        setState: { show14: false },
         nextText: 14
       },
       {
-        text: "Check the fridge",
+        text: "Leave closet",
         nextText: 15
       },
+    ]
+  },
+  
+  //in the bathroom
+  {
+    id: 12,
+    text: "The flourescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
+    options: [
       {
-        text: "Speak command to check messages",
-        nextText: 12
+        text: "leave bathroom",
+        nextText: 15
       },
     ]
   },
 
-  // id 12 for checked message 
+  //player looks in fridge
+  {
+    id: 13,
+    text: "You open the fridge door and the light comes on inside. The cold air pours out as you peek inside to see what's there. The fridge is empty. So is the freezer, except some ice trays. You haven't had a job in weeks so, there hasn't been much food in your apartment.",
+    options: [
+      {
+        text: "Close fridge door.",
+        nextText: 15
+      },
+    ]
+  },
+  
+  //room with lights already on
+    {
+    id: 15,
+    text: "You're standing in your room",
+    options: [
+      {
+        text: "Look in bathroom",
+        nextText: 12
+      },
+      {
+        text: "Check the fridge",
+        nextText: 13
+      },
+      {
+        text: "Speak command to check messages",
+        setState: {message: true},
+        requiredState: (currentState) => currentState.message,
+        nextText: 5
+      },
+      {
+        text: "Look in closet.",
+        requiredState: currentState => currentState.show14,
+        nextText: 11
+      },
+    ]
+  },
 
+// inspecting and putting on the clothes and utility belt
 
-
+  {
+    id: 14,
+    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue jacket and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship. ",
+    options: [
+      {
+        text: "Leave closet",
+        nextText: 15
+      },
+    ]  
+  },
+  
 // examples 
  /* },
   {
