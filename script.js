@@ -54,7 +54,7 @@ const textNodes = [
   // game bootup starting the game with options to restart
   {
     id: 1,
-    text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. Select options to advance in your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
+    text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. Select options to advance your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
     options: [
       {
         text: 'START',
@@ -86,7 +86,7 @@ const textNodes = [
     options: [
       {
         text: 'Speak command to check messages.',
-        setState: { message: true },
+        setState: { message: true},
         nextText: 5
       },
       {
@@ -108,7 +108,7 @@ const textNodes = [
     ]
   },
   
-  // player has chosen to check message 
+  // player has chosen to check message if accept and encrypt, then message option disapears
   {
     id: 5,
     text: "INCOMING MESSAGE FROM THE TSCA -- CONTRACT: MANORA PRIME, 'ACCEPT' FOR MISSION DETAILS",
@@ -210,14 +210,14 @@ const textNodes = [
       },
       {
         text: "Speak command to check messages",
-        setState: {message: false},
+        setState: {message: true},
         requiredState: (currentState) => currentState.message,
         nextText: 5
       },
     ]
   },
   
-    // Player looks in closet 
+    // Player looks in closet, if takes gear, then closet option disapears
 
   {
     id: 11,
@@ -226,7 +226,7 @@ const textNodes = [
       {
         text: "Inspect and equip clothing and utility belt",
         requiredState: currentState => currentState.show14,
-        setState: { show14: false },
+        setState: { show14: false},
         nextText: 14
       },
       {
@@ -242,7 +242,7 @@ const textNodes = [
     text: "The flourescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
     options: [
       {
-        text: "leave bathroom",
+        text: "Leave bathroom",
         nextText: 15
       },
     ]
@@ -258,6 +258,19 @@ const textNodes = [
         nextText: 15
       },
     ]
+  },
+  
+  // inspecting and putting on the clothes and utility belt
+
+  {
+    id: 14,
+    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue sport coat and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship. ",
+    options: [
+      {
+        text: "Leave closet",
+        nextText: 15
+      },
+    ]  
   },
   
   //room with lights already on
@@ -287,18 +300,21 @@ const textNodes = [
     ]
   },
 
-// inspecting and putting on the clothes and utility belt
-
+  // you try to leave but you haven't accepted the message or gotten your gear
   {
-    id: 14,
-    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue jacket and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship. ",
+    id: 16,
+    text: "You don't have everything you need yet.",
     options: [
       {
-        text: "Leave closet",
+        text: "Go back in.",
         nextText: 15
       },
-    ]  
+    ]
   },
+
+
+
+ 
   
 // examples 
  /* },
