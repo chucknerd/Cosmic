@@ -300,7 +300,7 @@ const textNodes = [
     ]
   },
 
-  // you try to leave but you haven't accepted the message or gotten your gear
+  // player tries to leave but hasn't accepted the message or taken gear
   {
     id: 16,
     text: "You don't have everything you need yet.",
