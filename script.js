@@ -281,6 +281,10 @@ const textNodes = [
         text: "Leave apartment",
         nextText: 18
       },
+      {
+        text: "If you choose this option, and don't leave at this point, so help me, I will restart the game.",
+        nextText: -1
+      },
     ]
   },
 
