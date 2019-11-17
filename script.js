@@ -56,7 +56,7 @@ function selectOption(option) {
 
 const textNodes = [
 
-  // game bootup starting the game with options to restart
+
   {
     id: 1,
     text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. Select options to advance your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
@@ -72,7 +72,7 @@ const textNodes = [
     ]
   },
   
-  //player said 'No Thanks'
+
   {
     id: 2,
     text: "You choose not to play Cosmic and never experience it's glory.",
@@ -84,7 +84,7 @@ const textNodes = [
     ]
   },
 
-  //player has chosen START the game with options but can go to sleep and not play, restart
+
   {
     id: 3,
     text: 'You wake up in your room to the sound of an incoming message.',
@@ -101,7 +101,7 @@ const textNodes = [
     ]
   },
   
-  // player goes to sleep
+
   {
     id: 4,
     text: 'You fall back to sleep, dreaming of traveling the galaxy only to wake up the next day and live a normal life.',
@@ -113,7 +113,7 @@ const textNodes = [
     ]
   },
   
-  // player has chosen to check message if accept and encrypt, then message option disapears
+  
   {
     id: 5,
     text: "INCOMING MESSAGE FROM THE TSCA -- CONTRACT: MANORA PRIME, 'ACCEPT' FOR MISSION DETAILS",
@@ -123,15 +123,10 @@ const textNodes = [
        // setState: {message: false},
         nextText: 6
       },
-      {
-        text: 'Ignore for now', 
-        nextText: 8
-      },
     ]
   },
   
-    // player accepts and encrypts
-    {
+     {
     id: 6,
     text: "Contract Invitation > Contreact Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Credits. By accepting advancement, you are hearby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
     options: [
@@ -139,111 +134,91 @@ const textNodes = [
         text: "AGREE AND ACCEPT TERMS",
         nextText: 7
       },
-      {
-        text: "Ignore for now.",
-        nextText: 8
-      },
     ]
   },
 
-  //player agrees and accepts terms
+
   {
     id: 7,
     text: "You have agreed to take the bounty. A copy of the agreement and deposit slip have been transmitted to your account. Your advancement funds are available immediately. Please report in 24 hours or less or we will be forced to place a warrant out and will litigate for any funds and costs for your extradition. Thank you!",
     options: [
       {
-        text: "Look around.",
-        nextText: 9
+        text: "Close message.",
+        nextText: 8
       },
     ]
   },
 
-  //player ignores messages and is just laying in bed
   {
     id: 8,
-    text: 'You ignore the message. What do you want to do?',
+    text: "You're laying in your bed, in the dark, still tired from the late night at the Ra-sta space station. Ramen Nebula is your kryptonite.",
     options: [
       {
-        text: 'Look around',
-      nextText: 9
+        text: "Do nothing",
+        nextText: 9
       },
       {
-        text: "Speak command to check messages",
-       // setState: {message: true},
-        //requiredState: (currentState) => currentState.message,
-        nextText: 5
-      },
+        text: "Speak command to turn lights on.",
+        nextText: 10
+      }, 
     ]
   },
-   
-  // player looks around the room
+
   {
     id: 9,
-    text: "You look around your quarters. It's very dark. You can't see. Your personal viewing monitor on your desk, to the left, is blinking with a new message.",
-    options: [ 
+    text: "You choose to stay in the dark like a bat.",
+    options: [
       {
-        text: "Speak command to turn light on",
-         nextText: 10
-      },
-      {
-        text: "Speak command to check messages",
-        //setState: {message: true},
-        //requiredState: (currentState) => currentState.message,
-        nextText: 5
+        text: "Speak command to turn lights on.",
+        nextText: 10
       },
     ]
   },
 
-  //player turns lights on
 
   {
     id: 10,
     text: "You say 'lights on' and the flourescent light illuminates. You see your room in all it's bachelor glory. It's nothing special, just what you can afford and a place to rest your head. It's a single room with a bathroom. There is a main viewing monitor in front of you on the wall. A sink to your right. One closet. The bathroom is beside the sink. You have a fridge and freezer combo in the corner. The door to exit is on your left. You have a desk, to your left, that doubles as a dresser. Your personal viewing monitor sits upon your desk, blinking with a new undread message.",
     options: [
       {
-        text: "Look in closet",
-        //requiredState: currentState => currentState.show14,
+        text: "Look in the closet",
         nextText: 11
       },
       {
-        text: "Look in bathroom",
+        text: "Look in the fridge",
         nextText: 12
       },
       {
-        text: "Check the fridge",
+        text: 'Look in the bathroom',
         nextText: 13
-      },
-      {
-        text: "Speak command to check messages",
-       // setState: {message: true},
-        //requiredState: (currentState) => currentState.message,
-        nextText: 5
       },
     ]
   },
-  
-    // Player looks in closet, if takes gear, then closet option disapears
 
   {
     id: 11,
     text: "You open the door and a flourescent light automatically illuminates. You see your clothes hanging on a rack. There are boots on the floor. Your utility belt is on a shelf above the rack. There is an open box of charge plugs next to the belt.",
     options: [
       {
-        text: "Inspect and equip clothing and utility belt",
-       // requiredState: currentState => currentState.show14,
-       // setState: { show14: false},
+        text: "Put on clothes and belt",
         nextText: 14
-      },
-      {
-        text: "Leave closet",
-       // nextText: 15
       },
     ]
   },
-  
-  //in the bathroom
+
   {
     id: 12,
+    text: "You open the fridge door and the light comes on inside. The cold air pours out as you peek inside to see what's there. The fridge is empty. So is the freezer, except some ice trays. You haven't had a job in weeks so, there hasn't been much food in your apartment.",
+    options: [
+      {
+        text: "Close fridge door",
+        nextText: 15
+      },
+    ]
+  },
+
+  {
+    id: 13,
     text: "The flourescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
     options: [
       {
@@ -253,70 +228,70 @@ const textNodes = [
     ]
   },
 
-  //player looks in fridge
-  {
-    id: 13,
-    text: "You open the fridge door and the light comes on inside. The cold air pours out as you peek inside to see what's there. The fridge is empty. So is the freezer, except some ice trays. You haven't had a job in weeks so, there hasn't been much food in your apartment.",
-    options: [
-      {
-        text: "Close fridge door.",
-        nextText: 15
-      },
-    ]
-  },
-  
-  // inspecting and putting on the clothes and utility belt
-
   {
     id: 14,
-    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue sport coat and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship. ",
+    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue sport coat and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship.",
     options: [
       {
         text: "Leave closet",
-        nextText: 15
+        nextText: 16
       },
-    ]  
+    ]
   },
-  
-  //room with lights already on
-    {
+
+  {
     id: 15,
-    text: "You're standing in your room",
+    text: "You're in your room, still in your pajamas.",
     options: [
       {
-        text: "Look in bathroom",
+        text: "Look in the closet",
+        nextText: 11
+      },
+      {
+        text: "Look in the fridge",
         nextText: 12
       },
       {
-        text: "Check the fridge",
+        text: 'Look in the bathroom',
         nextText: 13
       },
-      {
-        text: "Speak command to check messages",
-       // setState: {message: true},
-       // requiredState: (currentState) => currentState.message,
-        nextText: 5
-      },
-      {
-        text: "Look in closet.",
-      //  requiredState: currentState => currentState.show14,
-        nextText: 11
-      },
     ]
   },
 
-  // player tries to leave but hasn't accepted the message or taken gear
   {
     id: 16,
-    text: "You don't have everything you need yet.",
+    text: "You're in your room, fully dressed for exploring the galaxy.",
     options: [
       {
-        text: "Go back in.",
-        nextText: 15
+        text: "Stand there, awkwardly, like an idiot, not really knowing what to do with your hands.",
+        nextText: 17
+      },
+      {
+        text: "Leave apartment",
+        nextText: 18
       },
     ]
   },
 
+  {
+    id: 17,
+    text: "You do exactly that. Now, will you stop torturing yourself and get out of here?",
+    options: [
+      {
+        text: "Leave apartment",
+        nextText: 18
+      },
+    ]
+  },
+
+  
+
+
+
+
+  
+
+  
 
 
  
