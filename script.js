@@ -1,3 +1,8 @@
+/* NOTES: 
+11/16/2019 - SET STATES AND REQUIRED STATES ARE COMMENTED OUT FOR NOW /  
+NEED TO RECONGIFURE NODES SO PLAYER CAN CHOOSE DIFFERNT PATHS WITHOUT MANAGING STATES  */
+
+
 //selects texts
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
@@ -86,7 +91,7 @@ const textNodes = [
     options: [
       {
         text: 'Speak command to check messages.',
-        setState: { message: true},
+       // setState: { message: true},
         nextText: 5
       },
       {
@@ -115,7 +120,7 @@ const textNodes = [
     options: [
       {
         text: 'ACCEPT AND ENCRYPT',
-        setState: {message: false},
+       // setState: {message: false},
         nextText: 6
       },
       {
@@ -164,8 +169,8 @@ const textNodes = [
       },
       {
         text: "Speak command to check messages",
-        setState: {message: true},
-        requiredState: (currentState) => currentState.message,
+       // setState: {message: true},
+        //requiredState: (currentState) => currentState.message,
         nextText: 5
       },
     ]
@@ -182,8 +187,8 @@ const textNodes = [
       },
       {
         text: "Speak command to check messages",
-        setState: {message: true},
-        requiredState: (currentState) => currentState.message,
+        //setState: {message: true},
+        //requiredState: (currentState) => currentState.message,
         nextText: 5
       },
     ]
@@ -197,7 +202,7 @@ const textNodes = [
     options: [
       {
         text: "Look in closet",
-        requiredState: currentState => currentState.show14,
+        //requiredState: currentState => currentState.show14,
         nextText: 11
       },
       {
@@ -210,8 +215,8 @@ const textNodes = [
       },
       {
         text: "Speak command to check messages",
-        setState: {message: true},
-        requiredState: (currentState) => currentState.message,
+       // setState: {message: true},
+        //requiredState: (currentState) => currentState.message,
         nextText: 5
       },
     ]
@@ -225,13 +230,13 @@ const textNodes = [
     options: [
       {
         text: "Inspect and equip clothing and utility belt",
-        requiredState: currentState => currentState.show14,
-        setState: { show14: false},
+       // requiredState: currentState => currentState.show14,
+       // setState: { show14: false},
         nextText: 14
       },
       {
         text: "Leave closet",
-        nextText: 15
+       // nextText: 15
       },
     ]
   },
@@ -288,13 +293,13 @@ const textNodes = [
       },
       {
         text: "Speak command to check messages",
-        setState: {message: true},
-        requiredState: (currentState) => currentState.message,
+       // setState: {message: true},
+       // requiredState: (currentState) => currentState.message,
         nextText: 5
       },
       {
         text: "Look in closet.",
-        requiredState: currentState => currentState.show14,
+      //  requiredState: currentState => currentState.show14,
         nextText: 11
       },
     ]
