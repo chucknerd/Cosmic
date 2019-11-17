@@ -566,6 +566,200 @@ const textNodes = [
     ]
   },
 
+  {
+    id: 39,
+    text: "You tell your computer to scan for landing clearance frequencies and it brings up a list. You choose the TSCA frequency and request clearance through their automated system. You get a return message stating 'Landing Clearance granted for public landing docks aboard TSCA Space Station Endora. Use caution when entering and exiting dock bay doors. Your confirmation number is 87965458. Your space is reserved indefinitely.' You are surprised because, normally it's only good for a few hours and you have to renew or get approval for longer stays.",
+    options: [
+      {
+        text: "Land ship",
+        nextText: 40
+      },
+    ]
+  },
+
+  {
+    id: 40,
+    text: "You land your ship in the designated public landing bay. You shut off all your systems and open the hatch. You jump out, onto the landing bay floor and activate your hatch locks and alarms.",
+    options: [
+      {
+        text: "Look around",
+        nextText: 41
+      },
+      {
+        text: "Exit the landing dock",
+        nextText: 42
+      },
+    ]
+  },
+
+  {
+    id: 41,
+    text: "You're in the middle of a cold, large, metal room. There are many large panels running along the walls and you see the interior of the room is pretty banged up from people bashing into the hull with their ships. There's a fuel core pump to the right of your landing pad. The exit door is to the left. The landing bay doors are behind you.",
+    options: [
+      {
+        text: "Exit the landing dock",
+        nextText: 42
+      },
+    ]
+  },
+
+  {
+    id: 42,
+    text: "You walk toward the exit and see a sign above the door that says 'To Time and Space Control Agency Public Access Lobby.' You walk toward the door and it slides open to a large bay.",
+    options: [
+      {
+        text: "Look around",
+        nextText: 43
+      },
+      {
+        text: "Ask someone where to go.",
+        nextText: 44
+      },
+    ]
+  },
+
+  {
+    id: 43,
+    text: "The bay contains many people and TSCA agents. Some are standing, some are doing various tasks and speaking with each other. There are large view hatches all around the room and you can see the emptyness of the space, the stars, and ships flying around. You can also see Perseus through a window. There are many signs above desks that say 'Recieving.'",
+    options: [
+      {
+        text: "Ask someone where to go.",
+        nextText: 44
+      },
+    ] 
+  },
+
+  {
+    id: 44,
+    text: "Who do you ask?",
+    options: [
+      {
+        text: "The nearest TSCA Security Police officer",
+        nextText: 45
+      },
+      {
+        text: "Go to the recieving desk and ask the agent",
+        nextText: 46
+      },
+      {
+        text: "Ask the Asturian with the scar on their face smoking a cigar.",
+        nextText: 47
+      },
+      {
+        text: "Ask a Helpful Desk Terminal",
+        nextText: 48
+      },
+    ]
+  },
+
+  {
+    id: 45,
+    text: "You approach the nearest TSCA Security Police Officer that's currently beating a handcuffed suspect.",
+    options: [
+      {
+        text: "Ask if you can help",
+        nextText: 49
+      },
+      {
+        text: "Tell the officer to stop",
+        nextText: 50
+      },
+      {
+        text: "Ask where new contractors go for work.",
+        nextText: 51
+      },
+      {
+        text: "Don't ask the officer",
+        nextText: 44
+      },
+    ]
+  },
+
+  {
+    id: 46,
+    text: "You go to the nearest recieving desk",
+    options: [
+      {
+        text: "Ask where new contractors go for work",
+        nextText: 52
+      },
+      {
+        text: "Don't ask recieving",
+        nextText: 44
+      },
+    ]
+  },
+
+  {
+    id: 47,
+    text: "You walk up to the Asturian with the mean looking face.",
+    options: [
+      {
+        text: "Ask where new contractors should go for work",
+        nextText: 53
+      },
+    ]
+  },
+
+  {
+    id: 48,
+    text: "You walk up to the Helpful Desk Terminal to your left and it says 'Hello. I'm Helpful Desk. How may I help you?",
+    options: [
+      {
+        text: "Ask where new contractors should go for work",
+        nextText: 54
+      },
+      {
+        text: "Ask where the bathroom is",
+        nextText: 55
+      },
+      {
+        text: "Ask where the food court is",
+        nextText: 56
+      },
+      {
+        text: "Ask what kind of bear is best.",
+        nextText: 57
+      },
+    ]
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+  {
+    id: 49,
+  },
+
+
+
+
+
 
 
 
