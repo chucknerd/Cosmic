@@ -59,7 +59,7 @@ const textNodes = [
 
   {
     id: 1,
-    text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. There are no saves, so choose wisely... Select options to advance your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
+    text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. There are no saves, so choose wisely...Depending on your choices, your penalty will be more or less severe. You may go back one space, or have to restart the game. Select options to advance your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
     options: [
       {
         text: 'START',
@@ -107,8 +107,8 @@ const textNodes = [
     text: 'You fall back to sleep, dreaming of traveling the galaxy only to wake up the next day and live a normal life.',
     options: [
       {
-      text: 'Restart',
-      nextText: -1
+      text: 'Wake up the next day and Start Over',
+      nextText: 3
       },
     ]
   },
@@ -128,7 +128,7 @@ const textNodes = [
   
      {
     id: 6,
-    text: "Contract Invitation > Contreact Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Credits. By accepting advancement, you are hearby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
+    text: "Contract Invitation > Contreact Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Woolongs. By accepting advancement, you are hearby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
     options: [
       {
         text: "AGREE AND ACCEPT TERMS",
@@ -287,6 +287,290 @@ const textNodes = [
       },
     ]
   },
+  
+  {
+    id: 18,
+    text: "You open the door to the blinding light of day. You hear the sounds of the city around you. There's a black cat purring at your feet and rubbing on your ankles.",
+    options: [
+      {
+        text: "Look around",
+        nextText: 19
+      },
+      {
+        text: "Pet the kitty",
+        nextText: 20
+      },
+      {
+        text: "Walk down the stairs",
+        nextText: 21
+      },
+    ]
+  },
+
+  {
+    id: 19,
+    text: "You see the city of Tibed. It's a very busy and crowded city. There are no houses, only apartments stacked on top of each other like blocks. You look at the sky and see the sun and the TSCA space station, hazy and blue off in the distance. You also see ship traffic going in and out of the atmosphere.",
+    options: [
+      {
+        text: "Pet the kitty",
+        nextText: 20
+      },
+      {
+        text: "Walk down the stairs",
+        nextText: 21
+      },
+    ]
+  },
+  {
+    id: 20,
+    text: "You pet the little black cat. She's short haired and has yellow eyes.",
+    options: [
+      {
+        text: "Look around",
+        nextText: 19
+      },
+      {
+        text: "Walk down the stairs",
+        nextText: 21
+      },
+    ]
+  },
+  {
+    id: 21,
+    text: "You head down the stairs and walk towards the launch pad where your ship is parked. You see a sign that says 'Star Casino. Free ramen until 7pm!.",
+    options: [
+      {
+        text: "Go to the casino.",
+        nextText: 22
+      },
+      {
+        text: "Keep heading to launch pad.",
+        nextText: 23
+      },
+    ]
+  },
+
+  {
+    id: 22,
+    text: "You go to the casino and they treat you like a king. You spent the advance that the TSCA sent you. You now have no money to fuel your ship and do not make the deadline for the meeting. The TSCA apprehands you and all your licences are revoked and you spend the next months in the Tibed County Detention Center.",
+    options: [
+      {
+        text: "Serve your time and go back a few spaces",
+        nextText: 18
+      },
+    ]
+  },
+
+  {
+    id: 23,
+    text: "You reach the launchpad and see your ship parked where you left it.",
+    options: 
+    [
+      {
+        text: "Jump in and fly off",
+        nextText: 24
+      },
+      {
+        text: "Inspect ship",
+        nextText: 25
+      },
+    ]
+  },
+
+  {
+    id: 24,
+    text: "You jump in, fire up the engines, and burn off to exit the atmosphere. However, you have no fuel left to exit and you run out mid-air. You ship crashes with you in it and you die.",
+    options: [
+      {
+        text: "Go to pilot school, retake your test, and go back a few spaces",
+        nextText: 23
+      },
+    ]
+  },
+
+  {
+    id: 25,
+    text: "You do a pre-flight walk-around and inspect your ship. It's a remodeled Mono-racer you had built by an old friend. There's a nameplate on the side that says 'Swordfish II.'",
+    options: [
+      {
+        text: "Check exterior of the ship",
+        nextText: 26
+      },
+      {
+        text: "Get in pilot-station and check systems",
+        nextText: 27
+      },
+    ]
+  },
+
+  {
+    id: 26,
+    text: "You do an inepction of the outside of your ship and notice nothing out of the ordinary. You see the chipped and scratched red paint and wish you had the money for some touchups.",
+    options: [
+      {
+        text: "Get in pilot-station and check systems",
+        nextText: 27
+      },
+    ]
+  },
+
+  {
+    id: 27,
+    text: "You flip the battery switch on and you hear the computers and systems boot up. Flight clearance is a negative. Weather conditions show nominal. There are no obscrutcions for take-off. The fuel core indicator says empty.",
+    options: [
+      {
+        text: "Obtain flight clearance.",
+        nextText: 28
+      },
+      {
+        text: "Get out and refuel",
+        nextText: 29
+      },
+      {
+        text: "Take off already!",
+        nextText: 30
+      },
+    ]
+  },
+
+  {
+    id: 28,
+    text: "You speak the flight clearance command and the computers relay your request to the federal flight systems relays. You recieve a return message that states 'Clear to launch. Expiration 1 hour. Launch Code: 19AAA987C.",
+    options: [
+      {
+        text: "Get out and refuel",
+        nextText: 29
+      },
+      {
+        text: "Take off already!",
+        nextText: 24
+      },
+    ]
+  },
+
+  {
+    id: 29,
+    text: "You jump out of your pilot station and walk over to the fuel core pump. Core charges are rediculous nowadays.",
+    options: [
+      {
+        text: "Swipe your account card and fuel your jet.",
+        nextText: 32
+      },
+    ]
+  },
+
+  {
+    id: 30,
+    text: "You take off without flight clearance or any fuel. You slam into an oncoming freighter ship. You didn't explode because you had almose zero fuel to begin with, so you only died upon impact.",
+    options: [
+      {
+        text: "Go to pilot school, retake your test, and go back a few spaces",
+        nextText: 23
+      },
+    ]
+  },
+
+  {
+    id: 31,
+    text: "You take off, fully fueled, and with no flight clearance. You slam into an air bus that has just returned from the senior citizens center in downtown Tibed. Luckily it was empty and the bus flights are automated. You are the only one killed in the firey crash as your completely full fuel core ignites.",
+    options: [
+      {
+        text: "Go to pilot school, retake your test, and go back a few spaces",
+        nextText: 23
+      },
+    ]
+  },
+
+  {
+    id: 32,
+    text: "You swipe your card and the pump begins it's sequence. You grab the charging connector from the pump and unravel it. You open the fuel core charging port and shove that sucker in. Once connection is made, it automatically begins charging. You wait a bit and have a smoke out of shear boredome. Once it's completed charging, you do everything you just did, but in reverse order.",
+    options: [
+      {
+        text: "Get in pilot station and fire it up.",
+        nextText: 33
+      },
+    ]
+  },
+
+  {
+    id: 33,
+    text: "You ignite the engines. You check all systems and see green GO signs accross the board. You move your stick around and check flight controls. Everything seems fine. You punch in your flight clearance number and get a return message stating you are clear for takeoff and your number is still valid for the remainder of the hour. You throttle up your verticle thrusters to clear the pad. Once you're in the air, you engage forward thrust and send power to your rear engines and speed off into the sky toward the designated atmopsheric exit flight path that's been assigned to you.",
+    options: [
+      {
+        text: "Look out the window",
+        nextText: 34
+      },
+    ]
+  },
+
+  {
+    id: 34,
+    text: "You see the curviture of Perseus start t become very clear as you speed off higher and higher above the planet's surface. You still love the view and it always brings you back the the first time you saw it as a child.",
+    options: [
+      {
+        text: "Keep flying.",
+        nextText: 35
+      },
+    ]
+  },
+
+  {
+    id: 35,
+    text: "You keep flying onward to the TSCA space station 'Endora.' As you exit the atmopshere, you feel the ship shaking as it rips through to the void of space. Your computer advises that you've left the atmosphere and has switched from atmospheric thrusters to main core thrusters.",
+    options: [
+      {
+        text: "Look ahead",
+        nextText: 36
+      },
+    ]
+  },
+
+  {
+    id: 36,
+    text: "You see the TSCA Space Station 'Endora.' It's a massive structure that maintains it's presence outside of the orbit of Perseus. The station is shaped almost like a galaxy. There is a central core that everything revolves around. You see ship traffic coming in and out of the ship's transport hatches. You also see flashes of light coming from warp drive runways, designated for warp drive take-off and landing.",
+    options: [
+      {
+        text: "Land in space station.",
+        nextText: 37
+      },
+      {
+        text: "Request clearance to land in space station.",
+        nextText: 39
+      },
+    ]
+  },
+
+  {
+    id: 37,
+    text: "You approach to land without clearance and a warning blares from your systems that you have been targeted by many weapons. The TSCA says 'STOP IMMEDIATELY AND REQUEST CLEARANCE OR YOUR SHIP WILL BE SHOT. YOU HAVE TEN SECONDS TO COMPLY.'",
+    options: [
+      {
+        text: "Keep flying forward",
+        nextText: 38
+      },
+      {
+        text: "Stop ship and request clearance",
+        nextText: 39
+      },
+    ]
+  },
+
+  {
+    id: 38,
+    text: "You continue to fly forward and the TSCA auto-turret system cuts you down like a watermellon under a guillotine.",
+    options: [
+      {
+        text: "Brush up on your TSCA protocols and go back a space",
+        nextText: 36
+      },
+    ]
+  },
+
+
+
+
+
+
 
   
 
