@@ -1,6 +1,5 @@
 /* NOTES: 
-11/16/2019 - SET STATES AND REQUIRED STATES ARE COMMENTED OUT FOR NOW /  
-NEED TO RECONGIFURE NODES SO PLAYER CAN CHOOSE DIFFERNT PATHS WITHOUT MANAGING STATES  */
+11/18/2019 / NEED TO GO BACK AND EDIT ALL DIALOGUE RESPONSES TO HAVE ' ' LIKE THEY ARE TALKING TO YOU */
 
 
 //selects texts
@@ -311,10 +310,6 @@ const textNodes = [
     id: 19,
     text: "You see the city of Tibed. It's a very busy and crowded city. There are no houses, only apartments stacked on top of each other like blocks. You look at the sky and see the sun and the TSCA space station, hazy and blue off in the distance. You also see ship traffic going in and out of the atmosphere.",
     options: [
-      {
-        text: "Pet the kitty",
-        nextText: 20
-      },
       {
         text: "Walk down the stairs",
         nextText: 21
@@ -668,10 +663,6 @@ const textNodes = [
         text: "Ask where new contractors go for work.",
         nextText: 51
       },
-      {
-        text: "Don't ask the officer",
-        nextText: 44
-      },
     ]
   },
 
@@ -682,10 +673,6 @@ const textNodes = [
       {
         text: "Ask where new contractors go for work",
         nextText: 52
-      },
-      {
-        text: "Don't ask recieving",
-        nextText: 44
       },
     ]
   },
@@ -726,35 +713,255 @@ const textNodes = [
 
   {
     id: 49,
+    text: "You ask the officer if you can help beat the suspect and the officer enhtusiastically says 'Yes!' and you both engage in police brutality together.",
+    options: [
+      {
+        text: "Ask where new contractors go for work.",
+        nextText: 51
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 50,
+    text: "You tell the officer to stop and they believe that you are trying to help the suspect escape. They pull their charge pistol, hit you accross the temple, and turn your lights off.",
+    options: [
+      {
+        text: "Become less naive and go back a few spaces.",
+        nextText: 45
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 51,
+    text: "You ask the officer and he stops beating the suspect and happily tells you to go to receiving, then goes back to the beating.",
+    options: [
+      {
+        text: "Go to recieving",
+        nextText: 52
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 52,
+    text: "The recieving clerk takes your I.D. and hands you a contractor's badge. They tell you you've been granted full access. Again, like your parking spot, you're confused because contractors normally don't get full access to anything. The clerk tells you to head right in and hands you your badge.",
+    options: [
+      {
+        text: "Take the badge and walk in.",
+        nextText: 58
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 53,
+    text: "They say 'Fuck off'",
+    options: [
+      {
+        text: "Press the issue and tell him not to talk to you like that.",
+        nextText: 59
+      },
+      {
+        text: "Leave him alone.",
+        nextText: 60
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 54,
+    text: "The helpful desk tells you to go to any recieving desk in the TSCA Public Lobby, located in this sector, Sector 5.",
+    options: [
+      {
+        text: "Go to recieving",
+        nextText: 52
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 55,
+    text: "'Relief rooms are located on the forward and aft locations of each sector'.",
+    options: [
+      {
+        text: "Ask where new contractors should go for work",
+        nextText: 54
+      },
+      {
+        text: "Ask where the food court is",
+        nextText: 56
+      },
+      {
+        text: "Ask what kind of bear is best.",
+        nextText: 57
+      },
+    ]
   },
 
   {
-    id: 49,
+    id: 56,
+    text: "'The TSCA Public Cafeteria is located in Sector 4.'",
+    options: [
+      {
+        text: "Ask where new contractors should go for work",
+        nextText: 54
+      },
+      {
+        text: "Ask where the bathroom is",
+        nextText: 55
+      },
+      {
+        text: "Ask what kind of bear is best.",
+        nextText: 57
+      },
+    ]
   },
+
+  {
+    id: 57,
+    text: "'A black bear.'",
+    options: [
+      {
+        text: "Ask where new contractors should go for work",
+        nextText: 54
+      },
+      {
+        text: "Ask where the bathroom is",
+        nextText: 55
+      },
+      {
+        text: "Ask where the food court is",
+        nextText: 56
+      },
+    ]
+  },
+  
+  {
+    id: 58,
+    text: "You walk to the door and swipe your badge. The light turns green and the door slides open. The huge room is full of desks and agents working. You see a sign above a desk that says 'Contractors.'",
+    options: [
+      {
+        text: "Go to contractor desk.",
+        nextText: 61
+      },
+    ]
+  },
+
+
+  {
+    id: 59,
+    text: "You kindly advise the mean person that you don't appreciate the tone they used toward you. Before you can finish educating him on ettiquite, a bolt of electricity shoots from his belt and you black out.",
+    options: [
+      {
+        text: "Keep your dignity and go back a space.",
+        nextText: 60
+      },
+    ]
+  },
+
+  {
+    id: 60,
+    text: "Who do you ask?",
+    options: [
+      {
+        text: "The nearest TSCA Security Police officer",
+        nextText: 45
+      },
+      {
+        text: "Go to the recieving desk and ask the agent",
+        nextText: 46
+      },
+      {
+        text: "Ask a Helpful Desk Terminal",
+        nextText: 48
+      },
+    ]
+  },
+
+  {
+    id: 61,
+    text: "You go to the contractor desk and tell them you're here for a job. They scan your badge and tell you to walk into the briefing room, they are waiting for you.",
+    options: [
+      {
+        text: "Go to briefing room.",
+        nextText: 62
+      },
+    ]
+  },
+
+  {
+    id: 62,
+    text: "You walk into the briefing room and there is a gigantic table. It's empty except two men in suits, sitting on one end. They ask you to have a seat in front of a folder on the other end of the table.",
+    options: [
+      {
+        text: "Tell them you'd prefer to stand. Less blood clots.",
+        nextText: 63
+      },
+      {
+        text: "Have a seat and listen.",
+        nextText: 64
+      },
+    ]
+  },
+
+  {
+    id: 63,
+    text: "One of the men respond 'No, that's weird. You're going to sit.",
+    options: [
+      {
+        text: "Have a seat and listen.",
+        nextText: 64
+      },
+    ]
+  },
+
+  {
+    id: 64,
+    text: "'We've contracted you today, not because you are the best, but because you are not. We need someone who's not flashy and is able to stay below the radar of any circle. We need you. There is a new threat to the galaxy that's operating on Manora Prime. They call themselves Zorgoth. We need you to eliminate their leadership either by apprehension or elimination. You'll have no personal expenses, your contractor's I.D. is wired to TSCA accounts, so spend whatever it takes. We will be monitoring expenses though, so only necessities for the job. You'll also get paid personal money on top of your advance. 50,000 Woolongs. Half now, half after you're done. Any questions, ask dispatch with the frequency in the file in front of you. Zorgoth works in the shadows now, after the war, but we still show activity of units trying to revive their cause. Good luck.",
+    options: [
+      {
+        text: "Read file.",
+        nextText: 65
+      },
+    ]
+  },
+
+  {
+    id: 65,
+    text: "You open the electronic file. 'Visa System, Manora Prime. Desert planet. Terror cells that call themselves 'Zorgoth' are remnents from an army led accross the galaxy that ended it's march on Perseus when they were defeated and eliminated by it's inhabitants. They were known to have disbanded as a whole, but there are still some who operate under the name. Travel to Manora Prime and eliminate or detain the cell. Hire locals to help. Your budget is unlimited. 25,000 Woolongs will be deposited into your personal account and your badge will be wired for expenses once you accept the contract.",
+    options: [
+      {
+        text: "Accept contract.",
+        nextText: 66
+      },
+    ]
+  },
+
+  {
+    id: 66,
+    text: "You accept and get all kinds of notifications on your wrist monitor with funds, accounts, locations, passes, clearances, everything you could possibly want and need for a job and your life. You feel great.",
+    options: [
+      {
+        text: "Leave and start job.",
+        nextText: 67
+      },
+    ]
+  },
+
+  {
+    id: 67,
+    text: "You get up to leave and the suits interrupt you. 'One more thing. If you're captured or decide to go rogue, we revoke all clearances and lisencure and garnish all funds and expenses from you. You'll essentially be stranded with whatever you have on hand. This is standard procedure to cover our asses. The personal advance is yours though.",
+    options: [
+      {
+        text: "Start the job.",
+        nextText: 68
+      },
+    ]
+  },
+
+
 
 
 
