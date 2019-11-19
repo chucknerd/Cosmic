@@ -955,11 +955,525 @@ const textNodes = [
     text: "You get up to leave and the suits interrupt you. 'One more thing. If you're captured or decide to go rogue, we revoke all clearances and lisencure and garnish all funds and expenses from you. You'll essentially be stranded with whatever you have on hand. This is standard procedure to cover our asses. The personal advance is yours though.",
     options: [
       {
-        text: "Start the job.",
+        text: "Leave and start the job.",
         nextText: 68
       },
     ]
   },
+  
+  {
+    id: 68,
+    text: "You realize there's nothing left for you to do here. You leave the room and head to the docking bay.",
+    options: [
+      {
+        text: "Refuel ship and get clearance to take off.",
+        nextText: 69
+      },
+    ]
+  },
+  
+  {
+    id: 69,
+    text: " You top off your fuel core. You gain clearance to take off from the docking bay. You leave the docking bay in your ship.",
+    options: [
+      {
+        text: "Request a light-jump lane and jump to Manora Prime.",
+        nextText: 70
+      },
+    ]
+  },
+  
+  {
+    id: 70,
+    text: "You punch in your request for a ligh-jump lane. You get a return message stating that your request has been granted. You may proceed to jump lane B-2. Your lane is reserved for the next thirty minutes.",
+    options: [
+      {
+        text: "Fly to jump lane B-1",
+        nextText: 71
+      },
+            {
+        text: "Fly to jump lane B-2",
+        nextText: 72
+      },
+            {
+        text: "Fly to jump lane B-3",
+        nextText: 73
+      },
+            {
+        text: "Fly to jump lane B-4",
+        nextText: 74
+      },
+    ]
+  },
+  
+  {
+    id: 71,
+    text: "You're not clear to jump from that lane.",
+    options: [
+      {
+        text: "Review clearance.",
+        nextText: 70
+      },
+    ]
+  },
+  
+    {
+    id: 72,
+      text: "You park in your light jump lane and your engines sync to the lght jump power grid. Your systems tell you the grid is aligning your destination is being calculated. You begin to feel that familiar tingle of light travel on your body. It feels like a combination of falling and static electricity. The prompt comes on and tells you to initiate launch code when ready. Launch code will be valid for the next two minutes.",
+      options: [
+        {
+          text: "Launch",
+          nextText: 75
+        },
+      ]
+  },
+  
+    {
+    id: 73,
+       text: "You're not clear to jump from that lane.",
+    options: [
+      {
+        text: "Review clearance.",
+        nextText: 70
+      },
+    ]
+  },
+  
+    {
+    id: 74,
+       text: "You're not clear to jump from that lane.",
+    options: [
+      {
+        text: "Review clearance.",
+        nextText: 70
+      },
+    ]
+  },
+  
+  {
+    id: 75,
+    text: "You're travelling at light speed to another start system. You've always hated this feeling, but you're used to it. You know you're travling but you stell feel as if you're still in the jump lane. You also feel as if you're already at Manora Prime. While you're thinking, your systems tell you that you'll be out of jump in 3, 2, 1.",
+    options: [
+      {
+        text: "Check systems.",
+        nextText: 76
+      },
+      {
+        text: "Run a long-range scan",
+        nextText: 77
+      },
+    ]
+  },
+  
+  {
+    id: 76,
+    text: "You do a full systems check and everything seems to be in working order, except your atmospheric engines are frozen. Without these, you won't be able to fly when you enter the atmosphere of Manora Prime. You need them to land.",
+    options: [
+      {
+        text: "Divert heat from fusion core to atmospheric engines.",
+        nextText: 78
+      },
+      {
+        text: "Open hatch and spacewalk to check engines externally.",
+        nextText: 79
+      },
+      {
+        text: "Slip thermal space suit and helmet on for spacewalk.",
+        nextText: 80
+      },
+      {
+        text: "Run a long-range scan",
+        nextText: 77
+      },
+    ]
+  },
+  
+  {
+    id: 77,
+    test: "You use long range scanners and they show you that you're not yet in orbit with Manora Prime and you missed the light jump ramp by thousands of miles. Gotta love TSCA equipment!",
+    options: [
+      {
+        text: "Check systems",
+        nextText: 76
+      },
+    ]
+  },
+  
+  {
+    id: 78,
+    text: "ERROR 729: Diverter Malfunction.",
+    options: [
+      {
+        text: "Open hatch and spacewalk to check engines externally.",
+        nextText: 79
+      },
+      {
+        text: "Slip thermal space suit and helmet on for spacewalk.",
+        nextText: 80
+      },
+    ]
+  },
+  
+  {
+    id: 79,
+    text: "You decompress and your bodily fluids boil, then freeze, because you have no suit on.",
+    options: [
+      {
+        text: "Review your spacewalk manual and go back a few spaces.",
+        nextText: 76
+      },
+    ]
+  },
+  
+  {
+    id: 80,
+    text: "You slip on your thermal suit and helmet. Everything is sealing and temperature regulators are working properly. Air recirculation is positive.",
+    options: [
+      {
+        text: "Remove harness and open hatch.",
+        nextText: 81
+      },
+      {
+        text: "Open hatch.",
+        nextText: 82
+      }
+    ]
+  },
+  
+  {
+    id: 81,
+    text: "You open the hatch to a loud hiss in the pilot station, followed by dead silence as you're sucked out into the darkness of space. You have no jets to propel you back or to control your movements. You die from suffocation after the batteries in your recirculation pumps drain.",
+    options: [
+            {
+        text: "Review your spacewalk manual and go back a few spaces.",
+        nextText: 76
+      },
+    ]
+  },  
+  
+  {
+    id: 82,
+    text: "You open the hatch to a loud hiss in the pilot station, followed by dead silence. There was some vacuum pull, but your harness kept you strapped to your seat.",
+    options: [
+      {
+        text: "Take off harness and jump out.",
+        nextText: 83
+      },
+      {
+        text: "Attach lanyard to anchor point.",
+        nextText: 84
+      },
+    ]
+  },
+  
+  {
+    id: 83,
+    text: "Nothing was keeping you anchored to the ship so you fly into the darkness of space. You have no jets to propel you back or to control your movements. You die from suffocation after the batteries in your recirculation pumps drain.",
+    options: [
+      {
+        text: "Review your spacewalk manual and go back a few spaces.",
+        nextText: 76
+      },
+    ]
+  },
+  
+  {
+    id: 84,
+    text: "You're now anchored to the ship.",
+    options: [
+      {
+        text: "Inspect the diverter.",
+        nextText: 85
+      },
+    ]
+  },
+  
+  {
+    id: 85,
+    text: "You see the diverter panel on the engine and there is steam coming out of it.",
+    options: [
+      {
+        text: "Open panel.",
+        nextText: 86
+      },
+    ]
+  },
+  
+  {
+    id: 86,
+    text: "You open the panel and notice a hose spewing hot air. You also notice that the automatic diverter valve is frozen solid. So you will have to fix this manually. You see three connectors that it could fit into. One is labeled 'PS' the second AE and the third 'FCS'",
+    options: [
+      {
+       text: "Connect to PS",
+        nextText: 87
+      },
+      {
+       text: "Connect to AE",
+        nextText: 88
+      },
+      {
+        text: "Connect to FCS",
+        nextText: 89
+      },
+      {
+        text: "Heat automatic diverter valve with hot air from hose.",
+        nextText: 90
+      },
+    ]
+  },
+  
+  {
+    id: 87,
+    text: "You hook up to PS and see steam shooting out of the Pilot Station.",
+    options: [
+      {
+       text: "Connect to AE",
+        nextText: 88
+      },
+      {
+        text: "Connect to FCS",
+        nextText: 89
+      },
+      {
+        text: "Heat automatic diverter valve with hot air from hose.",
+        nextText: 90
+      },
+    ]
+  },
+  
+  {
+    id: 88,
+    text: "You hook up to AE and see the Atmospheric Engine ERROR light turn off and you can feel the automatic diverter valve warming up and sending hot air where it needs to.",
+    options: [
+      {
+        text: "Get back in the ship, close the hatch, remove your space suit, harness up, and blast off",
+      },
+    ]
+  },
+  
+  {
+    id: 89,
+    text: "You hook the hose up to 'FCS' and you see steam come up around the Flight Control Systems",
+    options: [
+      {
+        text: "Connect to PS",
+         nextText: 87
+       },
+       {
+        text: "Connect to AE",
+         nextText: 88
+       },
+       {
+         text: "Heat automatic diverter valve with hot air from hose.",
+         nextText: 90
+       },
+    ]
+  },
+  
+  {
+    id: 90,
+    text: "You blast the automatic diverter valve with heat from the hose. This controls heating to the entire ship automatically. You can feel it thumping now due to the computer trying to send it signals to heat the ship.",
+    options: [
+      {
+        text: "Reconnect the hose, get back in the ship, close the hatch, remove your space suit, harness up, and blast off",
+        nextText: 91
+      },
+    ]
+  },
+
+  {
+    id: 91,
+    text: "You blast off toward Manora Prime.",
+    options: [
+      {
+        text: "Scan for atmospheric conditions prime for entering atmosphere.",
+        nextText: 92
+      },
+    ]
+  },
+
+  {
+    id: 92,
+    text: "You scan the planet and take the closest trejectory for entering the atmosphere.",
+    options: [
+      {
+        text: "Look at planet",
+        nextText: 93
+      },
+      {
+        text: "Enter atmosphere.",
+        nextText: 95
+      },
+    ]
+  },
+
+  {
+    id: 93,
+    text: "You see a golden looking planet riddled with swirling storm systems.",
+    options: [
+      {
+        text: "Review planet files",
+        nextText: 94
+      },
+    ]
+  },
+
+  {
+    id: 94,
+    text: "Manora Prime is a desert planet. Most of it's flora and fauna can survive on very little water, if any. Some have resorted to converting chemicals to sustain biological life instead of water. The residents have strict water conservation policies. Some are punishible by death, depending on the region. Consult local legistlation for water conservation regulations. Sand storms are present in some areas and may occur at any time in others. Use caution when a sand storm approaches.",
+    options: [
+      {
+        text: "Enter atmosphere.",
+        nextText: 95
+      },
+    ]
+  },
+
+  {
+    id: 95,
+    text: "You make your descent into the atmosphere of Manora Prime. You feel the rumble and shake as you puncture the layers of air molecules that protect the planet. As you break closer, the planets features become more clear. You see rolling dunes with mountian peaks protruding from the tops. You see desert plants and various creatures roaming the ground and flying in the air. You see plumes of sand from distant sand storms.",
+    options: [
+      {
+        text: "Activate surface scanners for landing.",
+        nextText: 96
+      },
+    ]
+  },
+
+  {
+    id: 96,
+    text: "Surface scanners reveal there is a small city 573 miles east of your location. There is a TSCA consulate there with an appointed TSCA official. There are accomodations for ship landing and takeoff, including fuel core charging.",
+    options: [
+      {
+        text: "Land ship",
+        nextText: 97
+      },
+    ]
+  },
+
+  {
+    id: 98,
+    text: "You land your ship on an empty pad. You open the hatch and dry, hot desert air shoots in as the vaccum of your crew station releases. You get dust in your eyes. You can already feel the grit of the sand between your teeth.",
+    options: [
+      {
+        text: "Go to consolate.",
+        nextText: 99
+      },
+      {
+        text: "Check out the local scene.",
+        nextText: 100
+      },
+    ]
+  },
+
+  {
+    id: 99,
+    text: "You go to the consolate. It's a dusty looking building that's got a stencil on the outside that says 'TSCA Ambasador'. You walk in and see a man in a brown robe at a desk. He's an older looking man with white hair and a white beard. He looks like your only hope.",
+    options: [
+      {
+        text: "Talk to the man.",
+        nextText: 101
+      },
+    ]
+  },
+
+  {
+    id: 100,
+    text: "You walk around looking for things to do. You see people walking around and working in their respective kiosks, trying to make and sell their items. There are different buildings, but most are unlabeled and you have no idea what they are. You see some people in a group. They have black and white clothing on and look out of place compared to the others.",
+    options: [
+      {
+        text: "Go and talk to them about the local Zorgoth cell",
+        nextText: 102
+      },
+    ]
+  },
+
+  {
+    id: 101,
+    text: "You walk up to the robed gentlemen and tell him your name and that you're a contractor witht the TSCA. He asks for your credentials and you show him. His name is Ben.",
+    options: [
+      {
+        text: "Ask him for help.",
+        nextText: 105
+      },
+      {
+        text: "Ask him where to find the local Zorgoth cell.",
+        nextText: 106
+      },
+    ]
+  },
+
+  {
+    id: 102,
+    text: "You approach the group and ask them if they know anything about Zorgoth. They say 'No. Get out of here before you get hurt.'",
+    options: [
+      {
+        text: "Press the issue.",
+        nextText: 107
+      },
+      {
+        text: "Go to consolate.",
+        nextText: 99
+      },
+    ]
+  },
+
+  {
+    id: 103,
+    text: "The files show you that Zorgoth cells operate in very small groups without established bases. They do not take recruitement from outsiders and only recruit by referral or observation. They have been observed as wearing black and white, because they consider themselves unwavering in their moral system. There is no grey area. The letter Z is usually displayed. Although it is not illegal to be a member of Zorgoth, they are highly monitored by the TSCA and considered criminal and dangerous. The TSCA Consolate will have details and resources about the local cells.",
+    options: [
+      {
+        text: "Talk to group you saw outside",
+        nextText: 104
+      },
+    ]
+  },
+
+  { id: 104,
+  text: "You approach the group and ask them if they know anything about Zorgoth. They say 'No. Get out of here before you get hurt.'",
+    options: [
+      {
+        text: "Press the issue.",
+        nextText: 107
+      },
+    ]
+  },
+
+  {
+    id: 105,
+    text: "Ben tells you that, as a contractor, you were hired to help the TSCA, not the other way around.",
+    options: [
+      {
+        text: "Ask him where to find the local Zorgoth cell.",
+        nextText: 106
+      },
+    ]
+  },
+
+  {
+    id: 106,
+    text: "He tells you there are some that operate within this city. Usually roaming around looking for potential recruits. There are others that operate outside the city, ambushing trade routes and robbing farmers. It's because they are small that they are hard to track. This is what makes them dangerous. Their goals are to cripple infrastructures and recruit, but they are patient, so they don't make many mistakes. You'll see everything you need to know about them in your files.",
+    options: [
+      {
+        text: "Review files.",
+        nextText: 103
+      },
+    ]
+  },
+
+  {
+    id: 107,
+    text: "You insist that they know ",
+    options: [
+      {
+        
+      }
+    ]
+  },
+
+  
+
+
 
 
 
