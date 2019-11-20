@@ -1,6 +1,4 @@
-/* NOTES: 
-11/18/2019 / NEED TO GO BACK AND EDIT ALL DIALOGUE RESPONSES TO HAVE ' ' LIKE THEY ARE TALKING TO YOU */
-
+// NOTES: 11/20/2019 SPELLCHECK DONE. NEED TO READ ALL NODES AND POLISH TEXT AND STORY WHILE TESTING.
 
 //selects texts
 const textElement = document.getElementById('text')
@@ -127,7 +125,7 @@ const textNodes = [
   
      {
     id: 6,
-    text: "Contract Invitation > Contreact Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Woolongs. By accepting advancement, you are hearby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
+    text: "Contract Invitation > Contract Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Woolongs. By accepting advancement, you are hereby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
     options: [
       {
         text: "AGREE AND ACCEPT TERMS",
@@ -177,7 +175,7 @@ const textNodes = [
 
   {
     id: 10,
-    text: "You say 'lights on' and the flourescent light illuminates. You see your room in all it's bachelor glory. It's nothing special, just what you can afford and a place to rest your head. It's a single room with a bathroom. There is a main viewing monitor in front of you on the wall. A sink to your right. One closet. The bathroom is beside the sink. You have a fridge and freezer combo in the corner. The door to exit is on your left. You have a desk, to your left, that doubles as a dresser. Your personal viewing monitor sits upon your desk, blinking with a new undread message.",
+    text: "You say 'lights on' and the fluorescent light illuminates. You see your room in all it's bachelor glory. It's nothing special, just what you can afford and a place to rest your head. It's a single room with a bathroom. There is a main viewing monitor in front of you on the wall. A sink to your right. One closet. The bathroom is beside the sink. You have a fridge and freezer combo in the corner. The door to exit is on your left. You have a desk, to your left, that doubles as a dresser. Your personal viewing monitor sits upon your desk, blinking with a new unread message.",
     options: [
       {
         text: "Look in the closet",
@@ -196,7 +194,7 @@ const textNodes = [
 
   {
     id: 11,
-    text: "You open the door and a flourescent light automatically illuminates. You see your clothes hanging on a rack. There are boots on the floor. Your utility belt is on a shelf above the rack. There is an open box of charge plugs next to the belt.",
+    text: "You open the door and a fluorescent light automatically illuminates. You see your clothes hanging on a rack. There are boots on the floor. Your utility belt is on a shelf above the rack. There is an open box of charge plugs next to the belt.",
     options: [
       {
         text: "Put on clothes and belt",
@@ -218,7 +216,7 @@ const textNodes = [
 
   {
     id: 13,
-    text: "The flourescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
+    text: "The fluorescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
     options: [
       {
         text: "Leave bathroom",
@@ -229,7 +227,7 @@ const textNodes = [
 
   {
     id: 14,
-    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue sport coat and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartnemt and ship.",
+    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue sport coat and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartment and ship.",
     options: [
       {
         text: "Leave closet",
@@ -347,7 +345,7 @@ const textNodes = [
 
   {
     id: 22,
-    text: "You go to the casino and they treat you like a king. You spent the advance that the TSCA sent you. You now have no money to fuel your ship and do not make the deadline for the meeting. The TSCA apprehands you and all your licences are revoked and you spend the next months in the Tibed County Detention Center.",
+    text: "You go to the casino and they treat you like a king. You spent the advance that the TSCA sent you. You now have no money to fuel your ship and do not make the deadline for the meeting. The TSCA apprehends you and all your licenses are revoked and you spend the next months in the Tibed County Detention Center.",
     options: [
       {
         text: "Serve your time and go back a few spaces",
@@ -400,7 +398,7 @@ const textNodes = [
 
   {
     id: 26,
-    text: "You do an inepction of the outside of your ship and notice nothing out of the ordinary. You see the chipped and scratched red paint and wish you had the money for some touchups.",
+    text: "You do an inspection of the outside of your ship and notice nothing out of the ordinary. You see the chipped and scratched red paint and wish you had the money for some touchups.",
     options: [
       {
         text: "Get in pilot-station and check systems",
@@ -411,7 +409,7 @@ const textNodes = [
 
   {
     id: 27,
-    text: "You flip the battery switch on and you hear the computers and systems boot up. Flight clearance is a negative. Weather conditions show nominal. There are no obscrutcions for take-off. The fuel core indicator says empty.",
+    text: "You flip the battery switch on and you hear the computers and systems boot up. Flight clearance is a negative. Weather conditions show nominal. There are no obstructions for take-off. The fuel core indicator says empty.",
     options: [
       {
         text: "Obtain flight clearance.",
@@ -430,7 +428,7 @@ const textNodes = [
 
   {
     id: 28,
-    text: "You speak the flight clearance command and the computers relay your request to the federal flight systems relays. You recieve a return message that states 'Clear to launch. Expiration 1 hour. Launch Code: 19AAA987C.",
+    text: "You speak the flight clearance command and the computers relay your request to the federal flight systems relays. You receive a return message that states 'Clear to launch. Expiration 1 hour. Launch Code: 19AAA987C.",
     options: [
       {
         text: "Get out and refuel",
@@ -445,7 +443,7 @@ const textNodes = [
 
   {
     id: 29,
-    text: "You jump out of your pilot station and walk over to the fuel core pump. Core charges are rediculous nowadays.",
+    text: "You jump out of your pilot station and walk over to the fuel core pump. Core charges are ridiculous nowadays.",
     options: [
       {
         text: "Swipe your account card and fuel your jet.",
@@ -456,7 +454,7 @@ const textNodes = [
 
   {
     id: 30,
-    text: "You take off without flight clearance or any fuel. You slam into an oncoming freighter ship. You didn't explode because you had almose zero fuel to begin with, so you only died upon impact.",
+    text: "You take off without flight clearance or any fuel. You slam into an oncoming freighter ship. You didn't explode because you had almost zero fuel to begin with, so you only died upon impact.",
     options: [
       {
         text: "Go to pilot school, retake your test, and go back a few spaces",
@@ -467,7 +465,7 @@ const textNodes = [
 
   {
     id: 31,
-    text: "You take off, fully fueled, and with no flight clearance. You slam into an air bus that has just returned from the senior citizens center in downtown Tibed. Luckily it was empty and the bus flights are automated. You are the only one killed in the firey crash as your completely full fuel core ignites.",
+    text: "You take off, fully fueled, and with no flight clearance. You slam into an air bus that has just returned from the senior citizens center in downtown Tibed. Luckily it was empty and the bus flights are automated. You are the only one killed in the fiery crash as your completely full fuel core ignites.",
     options: [
       {
         text: "Go to pilot school, retake your test, and go back a few spaces",
@@ -478,7 +476,7 @@ const textNodes = [
 
   {
     id: 32,
-    text: "You swipe your card and the pump begins it's sequence. You grab the charging connector from the pump and unravel it. You open the fuel core charging port and shove that sucker in. Once connection is made, it automatically begins charging. You wait a bit and have a smoke out of shear boredome. Once it's completed charging, you do everything you just did, but in reverse order.",
+    text: "You swipe your card and the pump begins it's sequence. You grab the charging connector from the pump and unravel it. You open the fuel core charging port and shove that sucker in. Once connection is made, it automatically begins charging. You wait a bit and have a smoke out of shear boredom. Once it's completed charging, you do everything you just did, but in reverse order.",
     options: [
       {
         text: "Get in pilot station and fire it up.",
@@ -489,7 +487,7 @@ const textNodes = [
 
   {
     id: 33,
-    text: "You ignite the engines. You check all systems and see green GO signs accross the board. You move your stick around and check flight controls. Everything seems fine. You punch in your flight clearance number and get a return message stating you are clear for takeoff and your number is still valid for the remainder of the hour. You throttle up your verticle thrusters to clear the pad. Once you're in the air, you engage forward thrust and send power to your rear engines and speed off into the sky toward the designated atmopsheric exit flight path that's been assigned to you.",
+    text: "You ignite the engines. You check all systems and see green GO signs across the board. You move your stick around and check flight controls. Everything seems fine. You punch in your flight clearance number and get a return message stating you are clear for takeoff and your number is still valid for the remainder of the hour. You throttle up your vertical thrusters to clear the pad. Once you're in the air, you engage forward thrust and send power to your rear engines and speed off into the sky toward the designated atmospheric exit flight path that's been assigned to you.",
     options: [
       {
         text: "Look out the window",
@@ -500,7 +498,7 @@ const textNodes = [
 
   {
     id: 34,
-    text: "You see the curviture of Perseus start t become very clear as you speed off higher and higher above the planet's surface. You still love the view and it always brings you back the the first time you saw it as a child.",
+    text: "You see the curvature of Perseus start t become very clear as you speed off higher and higher above the planet's surface. You still love the view and it always brings you back the the first time you saw it as a child.",
     options: [
       {
         text: "Keep flying.",
@@ -511,7 +509,7 @@ const textNodes = [
 
   {
     id: 35,
-    text: "You keep flying onward to the TSCA space station 'Endora.' As you exit the atmopshere, you feel the ship shaking as it rips through to the void of space. Your computer advises that you've left the atmosphere and has switched from atmospheric thrusters to main core thrusters.",
+    text: "You keep flying onward to the TSCA space station 'Endora.' As you exit the atmosphere, you feel the ship shaking as it rips through to the void of space. Your computer advises that you've left the atmosphere and has switched from atmospheric thrusters to main core thrusters.",
     options: [
       {
         text: "Look ahead",
@@ -552,7 +550,7 @@ const textNodes = [
 
   {
     id: 38,
-    text: "You continue to fly forward and the TSCA auto-turret system cuts you down like a watermellon under a guillotine.",
+    text: "You continue to fly forward and the TSCA auto-turret system cuts you down like a watermelon under a guillotine.",
     options: [
       {
         text: "Brush up on your TSCA protocols and go back a space",
@@ -615,7 +613,7 @@ const textNodes = [
 
   {
     id: 43,
-    text: "The bay contains many people and TSCA agents. Some are standing, some are doing various tasks and speaking with each other. There are large view hatches all around the room and you can see the emptyness of the space, the stars, and ships flying around. You can also see Perseus through a window. There are many signs above desks that say 'Recieving.'",
+    text: "The bay contains many people and TSCA agents. Some are standing, some are doing various tasks and speaking with each other. There are large view hatches all around the room and you can see the emptiness of the space, the stars, and ships flying around. You can also see Perseus through a window. There are many signs above desks that say 'Receiving.'",
     options: [
       {
         text: "Ask someone where to go.",
@@ -633,7 +631,7 @@ const textNodes = [
         nextText: 45
       },
       {
-        text: "Go to the recieving desk and ask the agent",
+        text: "Go to the receiving desk and ask the agent",
         nextText: 46
       },
       {
@@ -668,7 +666,7 @@ const textNodes = [
 
   {
     id: 46,
-    text: "You go to the nearest recieving desk",
+    text: "You go to the nearest receiving desk",
     options: [
       {
         text: "Ask where new contractors go for work",
@@ -713,7 +711,7 @@ const textNodes = [
 
   {
     id: 49,
-    text: "You ask the officer if you can help beat the suspect and the officer enhtusiastically says 'Yes!' and you both engage in police brutality together.",
+    text: "You ask the officer if you can help beat the suspect and the officer enthusiastically says 'Yes!' and you both engage in police brutality together.",
     options: [
       {
         text: "Ask where new contractors go for work.",
@@ -724,7 +722,7 @@ const textNodes = [
 
   {
     id: 50,
-    text: "You tell the officer to stop and they believe that you are trying to help the suspect escape. They pull their charge pistol, hit you accross the temple, and turn your lights off.",
+    text: "You tell the officer to stop and they believe that you are trying to help the suspect escape. They pull their charge pistol, hit you across the temple, and turn your lights off.",
     options: [
       {
         text: "Become less naive and go back a few spaces.",
@@ -738,7 +736,7 @@ const textNodes = [
     text: "You ask the officer and he stops beating the suspect and happily tells you to go to receiving, then goes back to the beating.",
     options: [
       {
-        text: "Go to recieving",
+        text: "Go to receiving",
         nextText: 52
       },
     ]
@@ -746,7 +744,7 @@ const textNodes = [
 
   {
     id: 52,
-    text: "The recieving clerk takes your I.D. and hands you a contractor's badge. They tell you you've been granted full access. Again, like your parking spot, you're confused because contractors normally don't get full access to anything. The clerk tells you to head right in and hands you your badge.",
+    text: "The receiving clerk takes your I.D. and hands you a contractor's badge. They tell you you've been granted full access. Again, like your parking spot, you're confused because contractors normally don't get full access to anything. The clerk tells you to head right in and hands you your badge.",
     options: [
       {
         text: "Take the badge and walk in.",
@@ -772,10 +770,10 @@ const textNodes = [
 
   {
     id: 54,
-    text: "The helpful desk tells you to go to any recieving desk in the TSCA Public Lobby, located in this sector, Sector 5.",
+    text: "The helpful desk tells you to go to any receiving desk in the TSCA Public Lobby, located in this sector, Sector 5.",
     options: [
       {
-        text: "Go to recieving",
+        text: "Go to receiving",
         nextText: 52
       },
     ]
@@ -852,7 +850,7 @@ const textNodes = [
 
   {
     id: 59,
-    text: "You kindly advise the mean person that you don't appreciate the tone they used toward you. Before you can finish educating him on ettiquite, a bolt of electricity shoots from his belt and you black out.",
+    text: "You kindly advise the mean person that you don't appreciate the tone they used toward you. Before you can finish educating him on etiquette, a bolt of electricity shoots from his belt and you black out.",
     options: [
       {
         text: "Keep your dignity and go back a space.",
@@ -870,7 +868,7 @@ const textNodes = [
         nextText: 45
       },
       {
-        text: "Go to the recieving desk and ask the agent",
+        text: "Go to the receiving desk and ask the agent",
         nextText: 46
       },
       {
@@ -930,7 +928,7 @@ const textNodes = [
 
   {
     id: 65,
-    text: "You open the electronic file. 'Visa System, Manora Prime. Desert planet. Terror cells that call themselves 'Zorgoth' are remnents from an army led accross the galaxy that ended it's march on Perseus when they were defeated and eliminated by it's inhabitants. They were known to have disbanded as a whole, but there are still some who operate under the name. Travel to Manora Prime and eliminate or detain the cell. Hire locals to help. Your budget is unlimited. 25,000 Woolongs will be deposited into your personal account and your badge will be wired for expenses once you accept the contract.",
+    text: "You open the electronic file. 'Visa System, Manora Prime. Desert planet. Terror cells that call themselves 'Zorgoth' are remnants from an army led across the galaxy that ended it's march on Perseus when they were defeated and eliminated by it's inhabitants. They were known to have disbanded as a whole, but there are still some who operate under the name. Travel to Manora Prime and eliminate or detain the cell. Hire locals to help. Your budget is unlimited. 25,000 Woolongs will be deposited into your personal account and your badge will be wired for expenses once you accept the contract.",
     options: [
       {
         text: "Accept contract.",
@@ -952,7 +950,7 @@ const textNodes = [
 
   {
     id: 67,
-    text: "You get up to leave and the suits interrupt you. 'One more thing. If you're captured or decide to go rogue, we revoke all clearances and lisencure and garnish all funds and expenses from you. You'll essentially be stranded with whatever you have on hand. This is standard procedure to cover our asses. The personal advance is yours though.",
+    text: "You get up to leave and the suits interrupt you. 'One more thing. If you're captured or decide to go rogue, we revoke all clearances and licensure and garnish all funds and expenses from you. You'll essentially be stranded with whatever you have on hand. This is standard procedure to cover our asses. The personal advance is yours though.",
     options: [
       {
         text: "Leave and start the job.",
@@ -985,7 +983,7 @@ const textNodes = [
   
   {
     id: 70,
-    text: "You punch in your request for a ligh-jump lane. You get a return message stating that your request has been granted. You may proceed to jump lane B-2. Your lane is reserved for the next thirty minutes.",
+    text: "You punch in your request for a light-jump lane. You get a return message stating that your request has been granted. You may proceed to jump lane B-2. Your lane is reserved for the next thirty minutes.",
     options: [
       {
         text: "Fly to jump lane B-1",
@@ -1019,7 +1017,7 @@ const textNodes = [
   
     {
     id: 72,
-      text: "You park in your light jump lane and your engines sync to the lght jump power grid. Your systems tell you the grid is aligning your destination is being calculated. You begin to feel that familiar tingle of light travel on your body. It feels like a combination of falling and static electricity. The prompt comes on and tells you to initiate launch code when ready. Launch code will be valid for the next two minutes.",
+      text: "You park in your light jump lane and your engines sync to the light jump power grid. Your systems tell you the grid is aligning your destination is being calculated. You begin to feel that familiar tingle of light travel on your body. It feels like a combination of falling and static electricity. The prompt comes on and tells you to initiate launch code when ready. Launch code will be valid for the next two minutes.",
       options: [
         {
           text: "Launch",
@@ -1052,7 +1050,7 @@ const textNodes = [
   
   {
     id: 75,
-    text: "You're travelling at light speed to another start system. You've always hated this feeling, but you're used to it. You know you're travling but you stell feel as if you're still in the jump lane. You also feel as if you're already at Manora Prime. While you're thinking, your systems tell you that you'll be out of jump in 3, 2, 1.",
+    text: "You're travelling at light speed to another start system. You've always hated this feeling, but you're used to it. You know you're traveling but you still feel as if you're still in the jump lane. You also feel as if you're already at Manora Prime. While you're thinking, your systems tell you that you'll be out of jump in 3, 2, 1.",
     options: [
       {
         text: "Check systems.",
@@ -1294,7 +1292,7 @@ const textNodes = [
 
   {
     id: 92,
-    text: "You scan the planet and take the closest trejectory for entering the atmosphere.",
+    text: "You scan the planet and take the closest trajectory for entering the atmosphere.",
     options: [
       {
         text: "Look at planet",
@@ -1320,7 +1318,7 @@ const textNodes = [
 
   {
     id: 94,
-    text: "Manora Prime is a desert planet. Most of it's flora and fauna can survive on very little water, if any. Some have resorted to converting chemicals to sustain biological life instead of water. The residents have strict water conservation policies. Some are punishible by death, depending on the region. Consult local legistlation for water conservation regulations. Sand storms are present in some areas and may occur at any time in others. Use caution when a sand storm approaches.",
+    text: "Manora Prime is a desert planet. Most of it's flora and fauna can survive on very little water, if any. Some have resorted to converting chemicals to sustain biological life instead of water. The residents have strict water conservation policies. Some are punishable by death, depending on the region. Consult local legislation for water conservation regulations. Sand storms are present in some areas and may occur at any time in others. Use caution when a sand storm approaches.",
     options: [
       {
         text: "Enter atmosphere.",
@@ -1331,7 +1329,7 @@ const textNodes = [
 
   {
     id: 95,
-    text: "You make your descent into the atmosphere of Manora Prime. You feel the rumble and shake as you puncture the layers of air molecules that protect the planet. As you break closer, the planets features become more clear. You see rolling dunes with mountian peaks protruding from the tops. You see desert plants and various creatures roaming the ground and flying in the air. You see plumes of sand from distant sand storms.",
+    text: "You make your descent into the atmosphere of Manora Prime. You feel the rumble and shake as you puncture the layers of air molecules that protect the planet. As you break closer, the planets features become more clear. You see rolling dunes with mountain peaks protruding from the tops. You see desert plants and various creatures roaming the ground and flying in the air. You see plumes of sand from distant sand storms.",
     options: [
       {
         text: "Activate surface scanners for landing.",
@@ -1342,7 +1340,7 @@ const textNodes = [
 
   {
     id: 96,
-    text: "Surface scanners reveal there is a small city 573 miles east of your location. There is a TSCA consulate there with an appointed TSCA official. There are accomodations for ship landing and takeoff, including fuel core charging.",
+    text: "Surface scanners reveal there is a small city 573 miles east of your location. There is a TSCA consulate there with an appointed TSCA official. There are accommodations for ship landing and takeoff, including fuel core charging.",
     options: [
       {
         text: "Land ship",
@@ -1353,10 +1351,10 @@ const textNodes = [
 
   {
     id: 98,
-    text: "You land your ship on an empty pad. You open the hatch and dry, hot desert air shoots in as the vaccum of your crew station releases. You get dust in your eyes. You can already feel the grit of the sand between your teeth.",
+    text: "You land your ship on an empty pad. You open the hatch and dry, hot desert air shoots in as the vacuum of your crew station releases. You get dust in your eyes. You can already feel the grit of the sand between your teeth.",
     options: [
       {
-        text: "Go to consolate.",
+        text: "Go to consulate.",
         nextText: 99
       },
       {
@@ -1368,7 +1366,7 @@ const textNodes = [
 
   {
     id: 99,
-    text: "You go to the consolate. It's a dusty looking building that's got a stencil on the outside that says 'TSCA Ambasador'. You walk in and see a man in a brown robe at a desk. He's an older looking man with white hair and a white beard. He looks like your only hope.",
+    text: "You go to the consulate. It's a dusty looking building that's got a stencil on the outside that says 'TSCA ambassador'. You walk in and see a man in a brown robe at a desk. He's an older looking man with white hair and a white beard. He looks like your only hope.",
     options: [
       {
         text: "Talk to the man.",
@@ -1390,7 +1388,7 @@ const textNodes = [
 
   {
     id: 101,
-    text: "You walk up to the robed gentlemen and tell him your name and that you're a contractor witht the TSCA. He asks for your credentials and you show him. His name is Ben.",
+    text: "You walk up to the robed gentlemen and tell him your name and that you're a contractor with the TSCA. He asks for your credentials and you show him. His name is Ben.",
     options: [
       {
         text: "Ask him for help.",
@@ -1412,7 +1410,7 @@ const textNodes = [
         nextText: 107
       },
       {
-        text: "Go to consolate.",
+        text: "Go to consulate.",
         nextText: 99
       },
     ]
@@ -1420,7 +1418,7 @@ const textNodes = [
 
   {
     id: 103,
-    text: "The files show you that Zorgoth cells operate in very small groups without established bases. They do not take recruitement from outsiders and only recruit by referral or observation. They have been observed as wearing black and white, because they consider themselves unwavering in their moral system. There is no grey area. The letter Z is usually displayed. Although it is not illegal to be a member of Zorgoth, they are highly monitored by the TSCA and considered criminal and dangerous. The TSCA Consolate will have details and resources about the local cells.",
+    text: "The files show you that Zorgoth cells operate in very small groups without established bases. They do not take recruitment from outsiders and only recruit by referral or observation. They have been observed as wearing black and white, because they consider themselves unwavering in their moral system. There is no grey area. The letter Z is usually displayed. Although it is not illegal to be a member of Zorgoth, they are highly monitored by the TSCA and considered criminal and dangerous. The TSCA Consulate will have details and resources about the local cells.",
     options: [
       {
         text: "Talk to group you saw outside",
@@ -1478,7 +1476,7 @@ const textNodes = [
 
   {
     id: 108,
-    text: "You lick your wounds and walk down the dusty alley. As you approah the alley's exit, eveyrthing goes black as a sack has been thrown over your head and people are dragging you off somewhere. They tie your hands behind you and you're thrown into a vehicle.",
+    text: "You lick your wounds and walk down the dusty alley. As you approach the alley's exit, everything goes black as a sack has been thrown over your head and people are dragging you off somewhere. They tie your hands behind you and you're thrown into a vehicle.",
     options: [
       {
         text: "Ask where they are taking you.",
@@ -1519,7 +1517,7 @@ const textNodes = [
 
   {
     id: 111,
-    text: "You wait for hours. The vehichle eventually stops and you're dragged out. You can hear the wind as you're being pulled and coaxed in a certain direction. The wind stops and you hear a door slam behind you. You're shoulders are shoved down into a chair and the sack on your head is ripped off. The room isn't very bright and you see figures standing around you. There is one figure that's directly in front of you staring.",
+    text: "You wait for hours. The vehicle eventually stops and you're dragged out. You can hear the wind as you're being pulled and coaxed in a certain direction. The wind stops and you hear a door slam behind you. You're shoulders are shoved down into a chair and the sack on your head is ripped off. The room isn't very bright and you see figures standing around you. There is one figure that's directly in front of you staring.",
     options: [
       {
         text: "Ask who they are.",
@@ -1568,7 +1566,7 @@ const textNodes = [
 
   {
     id: 115,
-    text: "The one in the center begins to speak and pace around you. 'That depends if you believe we are worthy or not. The TSCA and every other planetary government is a scourge on the universe. Our creator, our father, was killed unjustly, as he was molding planets into better places to live. Every planet we conquored is now thriving and the TSCA, along with the Unified Galactic Consortium, takes credit for our work! They are reaping the benefits of us erradicating poverty, racism, pollitical gain, classism, and by legacy, even death. Every planet has not need for want because they have everything now. When everyone is Zorgoth, everyone is happy. Everyone is free. We only killed and harmed those who were not worthy, those who oppose. You must clean a wound before you can close it. This is necesarry with any change. Everyone who is worthy is named Zorgoth.",
+    text: "The one in the center begins to speak and pace around you. 'That depends if you believe we are worthy or not. The TSCA and every other planetary government is a scourge on the universe. Our creator, our father, was killed unjustly, as he was molding planets into better places to live. Every planet we conquered is now thriving and the TSCA, along with the Unified Galactic Consortium, takes credit for our work! They are reaping the benefits of us eradicating poverty, racism, political gain, classism, and by legacy, even death. Every planet has not need for want because they have everything now. When everyone is Zorgoth, everyone is happy. Everyone is free. We only killed and harmed those who were not worthy, those who oppose. You must clean a wound before you can close it. This is necessary with any change. Everyone who is worthy is named Zorgoth.",
     options: [
       {
         text: "Cut your bindings and draw your charge pistol.",
@@ -1598,7 +1596,7 @@ const textNodes = [
 
   {
     id: 117,
-    text: "They respond 'I am Zorgoth' and everyone responds in unision 'We are Zorgoth.'",
+    text: "They respond 'I am Zorgoth' and everyone responds in unison 'We are Zorgoth.'",
     options: [
       {
         text: "Cut your bindings and draw your charge pistol.",
@@ -1609,7 +1607,7 @@ const textNodes = [
 
   {
     id: 118,
-    text: "You shoot the smiling one in the head and the others back up, but do not attack you. One speaks 'If you join us, you'll be helping the universe become a better place. Even today, we've been feeding and clothing the needy, patrolling for crime, we contribute to the worlds. Although, we do some things that the TSCA and the Unified Galactic Consortium believe are illegal, Zorgoth is a pure name. We have no need for ranks or classes. You have not killed a leader, but just have created a martyr. Everyone in the community knows we are a positive influence. You are in a shelter for refugees from a war on this planet, started by the TSCA. The ambasador is here to make sure this war continues. Become Zorgoth. Be worthy!",
+    text: "You shoot the smiling one in the head and the others back up, but do not attack you. One speaks 'If you join us, you'll be helping the universe become a better place. Even today, we've been feeding and clothing the needy, patrolling for crime, we contribute to the worlds. Although, we do some things that the TSCA and the Unified Galactic Consortium believe are illegal, Zorgoth is a pure name. We have no need for ranks or classes. You have not killed a leader, but just have created a martyr. Everyone in the community knows we are a positive influence. You are in a shelter for refugees from a war on this planet, started by the TSCA. The ambassador is here to make sure this war continues. Become Zorgoth. Be worthy!",
     options: [
       {
         text: "Join Zorgoth.",
@@ -1676,7 +1674,7 @@ const textNodes = [
 
   {
     id: 123,
-    text: "If you join us, you'll be helping the universe become a better place. Even today, we've been feeding and clothing the needy, patrolling for crime, we contribute to the worlds. Although, we do some things that the TSCA and the Unified Galactic Consortium believe are illegal, Zorgoth is a pure name. We have no need for ranks or classes. You will not have not killed a leader or criminals, but you would have created martyrs. Everyone in the community knows we are a positive influence. You are in a shelter for refugees from a war on this planet, started by the TSCA. The ambasador is here to make sure this war continues. Become Zorgoth. Be worthy!",
+    text: "If you join us, you'll be helping the universe become a better place. Even today, we've been feeding and clothing the needy, patrolling for crime, we contribute to the worlds. Although, we do some things that the TSCA and the Unified Galactic Consortium believe are illegal, Zorgoth is a pure name. We have no need for ranks or classes. You will not have not killed a leader or criminals, but you would have created martyrs. Everyone in the community knows we are a positive influence. You are in a shelter for refugees from a war on this planet, started by the TSCA. The ambassador is here to make sure this war continues. Become Zorgoth. Be worthy!",
     options: [
       {
         text: "Join Zorgoth.",
@@ -1695,7 +1693,7 @@ const textNodes = [
 
   {
     id: 124,
-    text: "You travel back to station 'Endora' and report your success. The commanders take your findings in the debrief. All funds are transfered. You're told that all your accesses and badges are now expired and you are advised to exit the secured areas immediately. You walk out to the public area and check your accounts. You've been thinking about the Zorgoth movement and the things they were saying and shake your head to brush it off as silly. You put your hand in your pocket to grab a smoke and feel a circular object.",
+    text: "You travel back to station 'Endora' and report your success. The commanders take your findings in the debrief. All funds are transferred. You're told that all your accesses and badges are now expired and you are advised to exit the secured areas immediately. You walk out to the public area and check your accounts. You've been thinking about the Zorgoth movement and the things they were saying and shake your head to brush it off as silly. You put your hand in your pocket to grab a smoke and feel a circular object.",
     options: [
       {
         text: "Examine object.",
@@ -1706,7 +1704,7 @@ const textNodes = [
 
   {
     id: 126,
-    text: "It's an info-disk. Usually handed out as advertisements and purley informational.",
+    text: "It's an info-disk. Usually handed out as advertisements and purely informational.",
     options: [
       {
         text: "Play disk.",
@@ -1717,7 +1715,7 @@ const textNodes = [
 
   {
     id: 127,
-    text: "A pure audio message plays and says 'Hello, I am Zorgoth. If you are watching this, then you have either killed, or apprehended us on Manora Prime. Upon playing this, you've activated an automated message accross Perseus to Zorgoth about our work on Manora Prime. You are not in danger and we will not seek you out. If you believe that we are wrong, then continue to live your life blind. If you believe we are right, then go to where people are suffering and you will find us creating a better world. You are most worthy and we look forward to meeting you again.",
+    text: "A pure audio message plays and says 'Hello, I am Zorgoth. If you are watching this, then you have either killed, or apprehended us on Manora Prime. Upon playing this, you've activated an automated message across Perseus to Zorgoth about our work on Manora Prime. You are not in danger and we will not seek you out. If you believe that we are wrong, then continue to live your life blind. If you believe we are right, then go to where people are suffering and you will find us creating a better world. You are most worthy and we look forward to meeting you again.",
     options: [
       {
         text: "Restart",
