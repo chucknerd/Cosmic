@@ -1463,94 +1463,269 @@ const textNodes = [
 
   {
     id: 107,
-    text: "You insist that they know ",
+    text: "You insist that they know and they surround you in an intimidating manner. They shove you into an alley and tell you to get out before they cut you.",
     options: [
       {
-        
+        text: "Brush yourself off and Walk down the alley to get away from danger.",
+        nextText: 108
+      },
+      {
+        text: "Go back and defend your honor!",
+        nextText: 109
+      },
+    ]
+  },
+
+  {
+    id: 108,
+    text: "You lick your wounds and walk down the dusty alley. As you approah the alley's exit, eveyrthing goes black as a sack has been thrown over your head and people are dragging you off somewhere. They tie your hands behind you and you're thrown into a vehicle.",
+    options: [
+      {
+        text: "Ask where they are taking you.",
+        nextText: 110
+      },
+      {
+        text: "Wait for what happens.",
+        nextText: 111
+      },
+    ]
+  },
+
+  {
+    id: 109,
+    text: "You go back and get in their face. A few members quickly stab you in the kidneys and they all walk away, hiding the evidence. You stand surprised for a few seconds before you look down and see that you're bleeding. You walk to the alley and die from your wounds.",
+    options: [
+      {
+        text: "Swallow your pride and go back a few spaces.",
+        nextText:102
+      },
+    ]
+  },
+
+  {
+    id: 110,
+    text: "They tell you that you're getting what you wanted. They are taking you to Zorgoth to test if you are worthy.",
+    options: [
+      {
+        text: "'Okay. That sounds nice.'",
+        nextText: 111
+      },
+      {
+        text: "'What happens if I am not worthy?'",
+        nextText: 112
+      },
+    ]
+  },
+
+  {
+    id: 111,
+    text: "You wait for hours. The vehichle eventually stops and you're dragged out. You can hear the wind as you're being pulled and coaxed in a certain direction. The wind stops and you hear a door slam behind you. You're shoulders are shoved down into a chair and the sack on your head is ripped off. The room isn't very bright and you see figures standing around you. There is one figure that's directly in front of you staring.",
+    options: [
+      {
+        text: "Ask who they are.",
+        nextText: 113
+      },
+      {
+        text: "Look around the room and plan your escape.",
+        nextText: 114,
       }
     ]
   },
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-
-  
-
-
- 
-  
-// examples 
- /* },
   {
-    id: 2,
-    text: "You venture forth in search of answers to where you are, when you come across a merchant.",
+    id: 112,
+    text: "One of them responds, 'If someone isn't worthy, they must be dead.'",
     options: [
       {
-        text: 'Trade the goo for a sword',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: {blueGoo: false, sword: true },
-        nextText: 3
-      },
-      {
-        text: 'Trade the goo for a shield',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: {blueGoo: false, shield: true },
-        nextText: 3
-      },
-      {
-        text: 'Ignore the merchant.',
-        nextText: 3
+        text: "Okay.",
+        nextText: 111
       },
     ]
   },
+
   {
-    id: 3,
-    text: 'After leaving the merchant, you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
+    id: 113,
+    text: "The figure in front of you says 'I am Zorgoth'",
     options: [
-      { 
-        text: 'Explore castle',
-        nextText: 4
-      },
-      { 
-        text: 'Find a room to sleep in the town',
-        nextText: 5
-      },
-      { 
-        text: 'Find some hay in a stable to sleep in',
-        nextText: 6
+      {
+        text: "Look around the room and plan your escape.",
+        nextText: 114,
       },
     ]
   },
+
   {
-    id: 4,
-    text: 'You are so tired that you fall asleep while exploring the castle and are killed by some terrible monster in your sleep.',
+    id: 114,
+    text: "You look around the room and see five people in front of you. You look behind you and see the door is directly behind you with no one guarding. You feel your charge pistol and belt still on. No one seemed to take anything from you. There is a tank of cryo-gas, used for cooling units, behind them. You have a blade you keep in your sleeve just for these occasions and you begin to slide it out.",
+    options: [
+
+      {
+        text: "Ask them if you are worthy, or if you will die.",
+        nextText: 115
+      },
+    ]
+  },
+
+  {
+    id: 115,
+    text: "The one in the center begins to speak and pace around you. 'That depends if you believe we are worthy or not. The TSCA and every other planetary government is a scourge on the universe. Our creator, our father, was killed unjustly, as he was molding planets into better places to live. Every planet we conquored is now thriving and the TSCA, along with the Unified Galactic Consortium, takes credit for our work! They are reaping the benefits of us erradicating poverty, racism, pollitical gain, classism, and by legacy, even death. Every planet has not need for want because they have everything now. When everyone is Zorgoth, everyone is happy. Everyone is free. We only killed and harmed those who were not worthy, those who oppose. You must clean a wound before you can close it. This is necesarry with any change. Everyone who is worthy is named Zorgoth.",
     options: [
       {
-      text: 'Restart',
-      nextText: -1
+        text: "Cut your bindings and draw your charge pistol.",
+        nextText: 116
+      },
+      {
+        text: "Ask the speaker if they are the leader.",
+        nextText: 117
+      },
+    ]
+  },
+
+  {
+    id: 116,
+    text: "You cut your bindings, bolt out of the chair, and draw your charge pistol on the center figure's head. The others flinch and draw weapons. None appear to have guns. The one in the center seems to not be phased by any of this and is smiling.",
+    options: [
+      {
+        text: "Ask the smiling one if they are the leader.",
+        nextText: 117
+      },
+      {
+        text: "Shoot the smiling one in the head.",
+        nextText: 118
+      },
+    ]
+  },
+
+  {
+    id: 117,
+    text: "They respond 'I am Zorgoth' and everyone responds in unision 'We are Zorgoth.'",
+    options: [
+      {
+        text: "Cut your bindings and draw your charge pistol.",
+        nextText: 119
+      },
+    ]
+  },
+
+  {
+    id: 118,
+    text: "You shoot the smiling one in the head and the others back up, but do not attack you. One speaks 'If you join us, you'll be helping the universe become a better place. Even today, we've been feeding and clothing the needy, patrolling for crime, we contribute to the worlds. Although, we do some things that the TSCA and the Unified Galactic Consortium believe are illegal, Zorgoth is a pure name. We have no need for ranks or classes. You have not killed a leader, but just have created a martyr. Everyone in the community knows we are a positive influence. You are in a shelter for refugees from a war on this planet, started by the TSCA. The ambasador is here to make sure this war continues. Become Zorgoth. Be worthy!",
+    options: [
+      {
+        text: "Join Zorgoth.",
+        nextText: 120
+      },
+      {
+        text: "Shoot to kill everyone in the room.",
+        nextText: 121
+      },
+      {
+        text: "Shoot the pressurized cryo-gas tank.",
+        nextText: 122
+      },
+    ]
+  },
+
+  {
+    id: 119,
+    text: "You cut your bindings, bolt out of the chair, and draw your charge pistol on the center figure's head. The others flinch and draw weapons. None appear to have guns. The one in the center seems to not be phased by any of this and is smiling.",
+    options: [
+      {
+        text: "Shoot the smiling one in the head.",
+        nextText: 118
+      },
+      {
+        text: "Ask them why you shouldn't kill or bring them to the TSCA.",
+        nextText: 123
       }
     ]
-  },*/
+  },
+
+  {
+    id: 120,
+    text: "You lower your pistol and agree to join. They shake your hand and give you a black robe and say 'Hello Zorgoth, it's nice to meet you.' They arrange your faked death. You spend the rest of your days operating in secret and denounce your given name. You are now a fugitive of the TSCA and the Unified Galactic Consortium. You are now worthy.",
+    options: [
+      {
+        text: "Restart",
+        nextText: -1
+      },
+    ]
+  },
+
+  {
+    id: 121,
+    text: "You shoot everyone with deadly accuracy and they all hit the floor. You call in to Ambassador Ben that you've eliminated the Zorgoth cell. TSCA agents and Unified Galactic Consortium soldiers arrive to search the area and gather intel. Your job is done here.",
+    options: [
+      {
+        text: "Travel back to the 'Endora' and report in.",
+        nextText: 124
+      },
+    ]
+  },
+
+  {
+    id: 122,
+    text: "You aim and fire at the tank. It explodes behind the group, effectively crippling them. You detain them without killing and call in to Ambassador Ben that you've apprehended the Zorgoth cell. TSCA agents and Unified Galactic Consortium soldiers arrive to search the area and gather intel. Your job is done here.",
+    options: [
+      {
+        text: "Travel back to the 'Endora' and report in.",
+        nextText: 124
+      },
+    ]
+  },
+
+  {
+    id: 123,
+    text: "If you join us, you'll be helping the universe become a better place. Even today, we've been feeding and clothing the needy, patrolling for crime, we contribute to the worlds. Although, we do some things that the TSCA and the Unified Galactic Consortium believe are illegal, Zorgoth is a pure name. We have no need for ranks or classes. You will not have not killed a leader or criminals, but you would have created martyrs. Everyone in the community knows we are a positive influence. You are in a shelter for refugees from a war on this planet, started by the TSCA. The ambasador is here to make sure this war continues. Become Zorgoth. Be worthy!",
+    options: [
+      {
+        text: "Join Zorgoth.",
+        nextText: 120
+      },
+      {
+        text: "Shoot to kill everyone in the room.",
+        nextText: 121
+      },
+      {
+        text: "Shoot the pressurized cryo-gas tank.",
+        nextText: 122
+      },
+    ]
+  },
+
+  {
+    id: 124,
+    text: "You travel back to station 'Endora' and report your success. The commanders take your findings in the debrief. All funds are transfered. You're told that all your accesses and badges are now expired and you are advised to exit the secured areas immediately. You walk out to the public area and check your accounts. You've been thinking about the Zorgoth movement and the things they were saying and shake your head to brush it off as silly. You put your hand in your pocket to grab a smoke and feel a circular object.",
+    options: [
+      {
+        text: "Examine object.",
+        nextText: 125
+      },
+    ]
+  },
+
+  {
+    id: 126,
+    text: "It's an info-disk. Usually handed out as advertisements and purley informational.",
+    options: [
+      {
+        text: "Play disk.",
+        nextText: 127
+      },
+    ]
+  },
+
+  {
+    id: 127,
+    text: "A pure audio message plays and says 'Hello, I am Zorgoth. If you are watching this, then you have either killed, or apprehended us on Manora Prime. Upon playing this, you've activated an automated message accross Perseus to Zorgoth about our work on Manora Prime. You are not in danger and we will not seek you out. If you believe that we are wrong, then continue to live your life blind. If you believe we are right, then go to where people are suffering and you will find us creating a better world. You are most worthy and we look forward to meeting you again.",
+    options: [
+      {
+        text: "Restart",
+        nextText: -1
+      },
+    ]
+  },
+
 ]
 
 //calls startGame as soon as page loads
