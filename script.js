@@ -1,4 +1,4 @@
-// NOTES: 11/20/2019 SPELLCHECK DONE. NEED TO READ ALL NODES AND POLISH TEXT AND STORY WHILE TESTING.
+// NOTES: 11/20/2019 SPELLCHECK DONE. NEED TO READ ALL NODES AND POLISH TEXT AND STORY WHILE TESTING. TO TEST, WE'LL COMMENT EVERY NODE THAT'S BEEN LOOKED OVER AND TESTED OUT, THEN REMOVE COMMENTS WHEN FINISHED. DON'T COMMENT NODE ONE, SINCE THAT IS 'START GAME' AND WILL BREAK IT.
 
 //selects texts
 const textElement = document.getElementById('text')
@@ -54,99 +54,92 @@ function selectOption(option) {
 const textNodes = [
 
 
-  {
+  { // checked
     id: 1,
-    text: "Welcome to Cosmic! A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. There are no saves, so choose wisely...Depending on your choices, your penalty will be more or less severe. You may go back one space, or have to restart the game. Select options to advance your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
+    text: "Welcome to 'Cosmic!' A text-based adventure game set in the far reaches of space. --Instructions: Refresh your browser at any time to restart the game. There are no saves, so choose wisely...Depending on your choices, your penalty will be more or less severe. You may go back one space, or have to restart the game. Select options to advance your adventure. Thanks for playing! *Created and owned by Little Guyz Entertainment. Copyright 2019",
     options: [
       {
-        text: 'START',
-        nextText: 3
-      },
-      {
-        text: 'No, Thanks.',
+        text: "No, Thanks.",
         nextText: 2
       },
+      {
+        text: "START",
+        nextText: 3
+      },
     ]
-  },
-  
+  }, 
 
-  {
+  {// checked
     id: 2,
-    text: "You choose not to play Cosmic and never experience it's glory.",
+    text: "You choose not to play 'Cosmic' and never experience it's glory.",
     options: [
       {
-        text: 'Restart if you regret your decision',
+        text: "Restart if you regret your decision",
         nextText: -1
         },
     ]
-  },
+  }, 
 
-
-  {
+  {// checked
     id: 3,
-    text: 'You wake up in your room to the sound of an incoming message.',
+    text: "You wake up in your room. It's very dark. There are tiny lights, of various colors, around your room from different appliances and fixtures. It would look like the night sky if they weren't in such a structured pattern. There is a slow, pulsating glow that comes from your monitor, telling you that there is a new message.",
     options: [
       {
-        text: 'Speak command to check messages.',
-       // setState: { message: true},
-        nextText: 5
-      },
-      {
-        text: 'Go back to sleep.',
+        text: "Go back to sleep",
         nextText: 4
       },
+      {
+        text: "Speak the command: 'Check Messages'",
+        nextText: 5
+      },
     ]
-  },
-  
+  },  
 
-  {
+  {// checked
     id: 4,
-    text: 'You fall back to sleep, dreaming of traveling the galaxy only to wake up the next day and live a normal life.',
+    text: "You fall back to sleep, dreaming of traveling the galaxy, only to wake up later.",
     options: [
       {
-      text: 'Wake up the next day and Start Over',
+      text: "Wake up later and start over.",
       nextText: 3
       },
     ]
-  },
-  
-  
-  {
+  }, 
+ 
+  {// checked
     id: 5,
-    text: "INCOMING MESSAGE FROM THE TSCA -- CONTRACT: MANORA PRIME, 'ACCEPT' FOR MISSION DETAILS",
+    text: "INCOMING MESSAGE FROM THE TSCA -- CONTRACT, 'ACCEPT' FOR MISSION DETAILS",
     options: [
       {
-        text: 'ACCEPT AND ENCRYPT',
-       // setState: {message: false},
+        text: "Speak the command: 'Accept'",
         nextText: 6
       },
     ]
-  },
+  }, 
   
-     {
+  {// checked
     id: 6,
-    text: "Contract Invitation > Contract Bounty> Bounty Info: NO INFO AVAILABLE. Report to TSCA Station 'Endora' for further information. Advancement 1000 Woolongs. By accepting advancement, you are hereby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7 of the Unified Galactic Consortium Agreement.",
+    text: "ENCRYPTING...CONTRACT, TYPE: BOUNTY, LOCATION: Manora Prime, DETAILS:TOP SECRET, NO ADDITIONAL INFO AVAILABLE AT THIS TIME. INSTRUCTIONS: Report to TSCA Station 'Endora' for further information. Advancement 1000 Woolongs. By accepting advancement, you are hereby liable for the amount, if not delivered, under TSCA Code 38, Section 2, Paragraph 7, of the Unified Galactic Consortium Agreement.",
     options: [
       {
         text: "AGREE AND ACCEPT TERMS",
         nextText: 7
       },
     ]
-  },
+  }, 
 
-
-  {
+  {// checked
     id: 7,
-    text: "You have agreed to take the bounty. A copy of the agreement and deposit slip have been transmitted to your account. Your advancement funds are available immediately. Please report in 24 hours or less or we will be forced to place a warrant out and will litigate for any funds and costs for your extradition. Thank you!",
+    text: "'Thank you for accepting! A copy of the agreement and deposit slip have been transmitted to your account. Your advancement funds are available immediately. Please report in 24 hours or less or we will be forced to place a warrant out for your arrest and will litigate for any funds and costs for your extradition. We appreciate your services.'",
     options: [
       {
-        text: "Close message.",
+        text: "Speak the command: 'Close message.'",
         nextText: 8
       },
     ]
-  },
+  }, 
 
-  {
+  {// checked
     id: 8,
     text: "You're laying in your bed, in the dark, still tired from the late night at the Ra-sta space station. Ramen Nebula is your kryptonite.",
     options: [
@@ -155,27 +148,26 @@ const textNodes = [
         nextText: 9
       },
       {
-        text: "Speak command to turn lights on.",
+        text: "Speak the command: 'Lights On'",
         nextText: 10
       }, 
     ]
-  },
+  }, 
 
-  {
+  {// checked
     id: 9,
-    text: "You choose to stay in the dark like a bat.",
+    text: "You choose to stay in the dark, like a bat.",
     options: [
       {
-        text: "Speak command to turn lights on.",
+        text: "Speak the command: 'Lights On'",
         nextText: 10
       },
     ]
-  },
+  }, 
 
-
-  {
+  {// checked
     id: 10,
-    text: "You say 'lights on' and the fluorescent light illuminates. You see your room in all it's bachelor glory. It's nothing special, just what you can afford and a place to rest your head. It's a single room with a bathroom. There is a main viewing monitor in front of you on the wall. A sink to your right. One closet. The bathroom is beside the sink. You have a fridge and freezer combo in the corner. The door to exit is on your left. You have a desk, to your left, that doubles as a dresser. Your personal viewing monitor sits upon your desk, blinking with a new unread message.",
+    text: "The fluorescent lights illuminate. You see your room in all it's bachelor glory. It's nothing special, just what you can afford and a place to rest your head. It's a single room with a bathroom. There is a main viewing monitor in front of you on the wall. A sink to your right. One closet. The bathroom is beside the sink. You have a fridge and freezer combo in the corner. The door to exit is on your left. You have a desk, to your left, that doubles as a dresser. Your personal viewing monitor sits upon your desk and your wrist monitor is charging.",
     options: [
       {
         text: "Look in the closet",
@@ -190,20 +182,20 @@ const textNodes = [
         nextText: 13
       },
     ]
-  },
+  }, 
 
-  {
+  { // checked
     id: 11,
     text: "You open the door and a fluorescent light automatically illuminates. You see your clothes hanging on a rack. There are boots on the floor. Your utility belt is on a shelf above the rack. There is an open box of charge plugs next to the belt.",
     options: [
       {
-        text: "Put on clothes and belt",
+        text: "Put on your gear",
         nextText: 14
       },
     ]
-  },
+  }, 
 
-  {
+  { // checked
     id: 12,
     text: "You open the fridge door and the light comes on inside. The cold air pours out as you peek inside to see what's there. The fridge is empty. So is the freezer, except some ice trays. You haven't had a job in weeks so, there hasn't been much food in your apartment.",
     options: [
@@ -212,9 +204,9 @@ const textNodes = [
         nextText: 15
       },
     ]
-  },
+  }, 
 
-  {
+  { // checked
     id: 13,
     text: "The fluorescent light illuminates as you open the bathroom door and an exhaust fan turns on. You see a toilet in front of you and a shower to the right.",
     options: [
@@ -225,9 +217,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 14,
-    text: "You put on a button up, mustard-yellow long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, that you like to wear loosely just for show. You dawn a navy blue sport coat and slacks. You lace up some black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartment and ship.",
+    text: "You button up, mustard-yellow, long-sleeve shirt with the collar flipped up. You tie a black tie, around your neck, loosely, letting it hang. You don a navy blue sport coat and slacks. You lace up a pair of well used, black boots. You also strap on a utility belt that contains a charge pistol, charge pistol plugs, your I.D. and other credentials, and your key cards for your apartment and ship.",
     options: [
       {
         text: "Leave closet",
@@ -236,7 +228,7 @@ const textNodes = [
     ]
   },
 
-  {
+  {  // checked
     id: 15,
     text: "You're in your room, still in your pajamas.",
     options: [
@@ -255,12 +247,12 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 16,
-    text: "You're in your room, fully dressed for exploring the galaxy.",
+    text: "You're in your room, fully dressed, ready for exploring the galaxy.",
     options: [
       {
-        text: "Stand there, awkwardly, like an idiot, not really knowing what to do with your hands.",
+        text: "Stand there, awkwardly, like an idiot, not really knowing what to do with your hands",
         nextText: 17
       },
       {
@@ -270,7 +262,7 @@ const textNodes = [
     ]
   },
 
-  {
+  {  // checked
     id: 17,
     text: "You do exactly that. Now, will you stop torturing yourself and get out of here?",
     options: [
@@ -279,13 +271,13 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "If you choose this option, and don't leave at this point, so help me, I will restart the game.",
+        text: "If you choose this option, and don't leave at this point, so help me, I will restart the game",
         nextText: -1
       },
     ]
   },
   
-  {
+  { // checked
     id: 18,
     text: "You open the door to the blinding light of day. You hear the sounds of the city around you. There's a black cat purring at your feet and rubbing on your ankles.",
     options: [
@@ -304,7 +296,7 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 19,
     text: "You see the city of Tibed. It's a very busy and crowded city. There are no houses, only apartments stacked on top of each other like blocks. You look at the sky and see the sun and the TSCA space station, hazy and blue off in the distance. You also see ship traffic going in and out of the atmosphere.",
     options: [
@@ -314,9 +306,10 @@ const textNodes = [
       },
     ]
   },
-  {
+
+  { // checked
     id: 20,
-    text: "You pet the little black cat. She's short haired and has yellow eyes.",
+    text: "You pet the little black cat. She's short haired and has yellow eyes. She purrs as you show her some love.",
     options: [
       {
         text: "Look around",
@@ -328,9 +321,10 @@ const textNodes = [
       },
     ]
   },
-  {
+
+  { // checked
     id: 21,
-    text: "You head down the stairs and walk towards the launch pad where your ship is parked. You see a sign that says 'Star Casino. Free ramen until 7pm!.",
+    text: "You head down the stairs and walk towards the launch pad where your ship is parked. You see a sign that says 'Star Casino. Free ramen until 7pm!.'",
     options: [
       {
         text: "Go to the casino.",
@@ -343,9 +337,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 22,
-    text: "You go to the casino and they treat you like a king. You spent the advance that the TSCA sent you. You now have no money to fuel your ship and do not make the deadline for the meeting. The TSCA apprehends you and all your licenses are revoked and you spend the next months in the Tibed County Detention Center.",
+    text: "You go to the casino and they treat you like a king. You spent the advance that the TSCA sent you. You now have no money to fuel your ship and do not make the deadline for the meeting. The TSCA apprehends you and all your licenses are revoked. You spend the next months in the Tibed County Detention Center.",
     options: [
       {
         text: "Serve your time and go back a few spaces",
@@ -354,9 +348,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 23,
-    text: "You reach the launchpad and see your ship parked where you left it.",
+    text: "You reach the launchpad and see your ship parked, where you left it.",
     options: 
     [
       {
@@ -370,9 +364,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 24,
-    text: "You jump in, fire up the engines, and burn off to exit the atmosphere. However, you have no fuel left to exit and you run out mid-air. You ship crashes with you in it and you die.",
+    text: "You jump in, fire up the engines, and burn off to exit the atmosphere. However, you have no fuel left to exit and you run out mid-air. Your ship's parachute deploys and you descent back down to the surface in shame.",
     options: [
       {
         text: "Go to pilot school, retake your test, and go back a few spaces",
@@ -381,9 +375,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 25,
-    text: "You do a pre-flight walk-around and inspect your ship. It's a remodeled Mono-racer you had built by an old friend. There's a nameplate on the side that says 'Swordfish II.'",
+    text: "You do a pre-flight walk-around and inspect your ship. It's a red, remodeled Mono-racer you had built by an old friend. There's a nameplate on the side that says 'Swordfish.'",
     options: [
       {
         text: "Check exterior of the ship",
@@ -396,9 +390,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 26,
-    text: "You do an inspection of the outside of your ship and notice nothing out of the ordinary. You see the chipped and scratched red paint and wish you had the money for some touchups.",
+    text: "You do an inspection of the outside of your ship and notice nothing out of the ordinary. You see the chipped and scratched paint and wish you had the money for some touchups. You had a couple of machine guns, a turreted plasma cannon, and some externally mounted missiles, but you had to sell the guns for Woolongs and restocking the missiles have always been a rare luxury.",
     options: [
       {
         text: "Get in pilot-station and check systems",
@@ -407,12 +401,12 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 27,
-    text: "You flip the battery switch on and you hear the computers and systems boot up. Flight clearance is a negative. Weather conditions show nominal. There are no obstructions for take-off. The fuel core indicator says empty.",
+    text: "You flip the battery switch on and you hear the computers and some systems and fans turn on with battery power. Your monitors flash as they turn on and boot up the software. Flight clearance is a negative. Weather conditions show nominal. There are no obstructions for take-off. The fuel core indicator says empty. System software is up to date.",
     options: [
       {
-        text: "Obtain flight clearance.",
+        text: "Speak the command: 'Flight Clearance'",
         nextText: 28
       },
       {
@@ -426,9 +420,9 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 28,
-    text: "You speak the flight clearance command and the computers relay your request to the federal flight systems relays. You receive a return message that states 'Clear to launch. Expiration 1 hour. Launch Code: 19AAA987C.",
+    text: "The computers relay your request to the federal flight systems relays. You receive a return message that states 'Clear to launch. Clearance expiration 1 hour. Launch Code: 19AAA987C.'",
     options: [
       {
         text: "Get out and refuel",
@@ -441,20 +435,20 @@ const textNodes = [
     ]
   },
 
-  {
+  { // checked
     id: 29,
-    text: "You jump out of your pilot station and walk over to the fuel core pump. Core charges are ridiculous nowadays.",
+    text: "You jump out of your pilot station, onto the pad, and walk over to the fuel core pump. Core charges are ridiculous nowadays.",
     options: [
       {
-        text: "Swipe your account card and fuel your jet.",
+        text: "Swipe your account card and fuel your jet",
         nextText: 32
       },
     ]
   },
 
-  {
+  { // checked
     id: 30,
-    text: "You take off without flight clearance or any fuel. You slam into an oncoming freighter ship. You didn't explode because you had almost zero fuel to begin with, so you only died upon impact.",
+    text: "You take off without flight clearance or any fuel. You slam into an oncoming freighter ship that you weren't aware of. You didn't explode because you had almost zero fuel to begin with. You ship is too damaged to continue.",
     options: [
       {
         text: "Go to pilot school, retake your test, and go back a few spaces",
@@ -463,31 +457,20 @@ const textNodes = [
     ]
   },
 
-  {
-    id: 31,
-    text: "You take off, fully fueled, and with no flight clearance. You slam into an air bus that has just returned from the senior citizens center in downtown Tibed. Luckily it was empty and the bus flights are automated. You are the only one killed in the fiery crash as your completely full fuel core ignites.",
-    options: [
-      {
-        text: "Go to pilot school, retake your test, and go back a few spaces",
-        nextText: 23
-      },
-    ]
-  },
-
-  {
+  { // checked
     id: 32,
-    text: "You swipe your card and the pump begins it's sequence. You grab the charging connector from the pump and unravel it. You open the fuel core charging port and shove that sucker in. Once connection is made, it automatically begins charging. You wait a bit and have a smoke out of shear boredom. Once it's completed charging, you do everything you just did, but in reverse order.",
+    text: "You swipe your card and the pump begins it's sequence. You grab the charging connector from the pump and unravel it. You open the fuel core charging port and shove that sucker in. Once connection is made, it automatically begins charging. You wait a bit and have a smoke out of sheer boredom. Once it's completed charging, you do everything you just did, but in reverse order.",
     options: [
       {
-        text: "Get in pilot station and fire it up.",
+        text: "Get in pilot station and fire it up",
         nextText: 33
       },
     ]
   },
 
-  {
+  { // checked
     id: 33,
-    text: "You ignite the engines. You check all systems and see green GO signs across the board. You move your stick around and check flight controls. Everything seems fine. You punch in your flight clearance number and get a return message stating you are clear for takeoff and your number is still valid for the remainder of the hour. You throttle up your vertical thrusters to clear the pad. Once you're in the air, you engage forward thrust and send power to your rear engines and speed off into the sky toward the designated atmospheric exit flight path that's been assigned to you.",
+    text: "You ignite the engines. You check all systems and see green GO signs across the board. You move your stick around and check flight controls. Everything seems fine. You punch in your flight clearance number and get a return message that states: 'You are clear for takeoff. Your clearance number is still valid for the remainder of the hour.' You throttle the engines for vertical take-off to clear the pad. Once you're in the air, you engage forward thrust and send power to your rear engines and speed off into the sky toward the designated atmospheric exit flight path that's been assigned to you.",
     options: [
       {
         text: "Look out the window",
@@ -1728,3 +1711,4 @@ const textNodes = [
 
 //calls startGame as soon as page loads
 startGame()
+
