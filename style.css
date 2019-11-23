@@ -43,7 +43,7 @@ body {
     border-color: black;
 }
 
-/* CRT EFFECT */
+/* CRT EFFECT  Credit: http://aleclownes.com/2017/02/01/crt-display.html THANK YOU! */
 
 @keyframes flicker {
   0% {
